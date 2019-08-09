@@ -33,7 +33,7 @@ public class FindSnilsDAO {
     public static FindSnils getByIdFindSnils(int id){
         FindSnils result = null;
         try(Session session = HibernateUtil.getSessionFactory().openSession()) {
-            result = session.createQuery("from FindSnils t where t.state = 0 and t.id=" + id,FindSnils.class).getSingleResult();
+            result = session.createQuery("from FindSnils t where  t.id=" + id,FindSnils.class).getSingleResult();
         } catch (Exception e) {
             e.printStackTrace();
         }

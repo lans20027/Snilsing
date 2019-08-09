@@ -8,7 +8,7 @@ import org.tfoms.snils.xmls.XmlParser;
 public class Main {
 
     public static void main(String [] args){
-        FindSnils result = FindSnilsDAO.getByIdFindSnils(975);
+        FindSnils result = FindSnilsDAO.getByIdFindSnils(4611876);
         System.out.println(result);
 
         XmlParser parser = new XmlParser();
