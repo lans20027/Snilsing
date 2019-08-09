@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.url">jdbc:oracle:thin:@srv-oracle03:1521:dame</property>
+    <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+    <property name="hibernate.connection.username">developer</property>
+    <property name="hibernate.connection.password">asu</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+    <mapping class="org.tfoms.snils.model.FindSnils" />
+    <mapping class="org.tfoms.snils.model.Person"/>
+    <mapping class="org.tfoms.snils.model.Personadd"/>
+  </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,8 @@
+
+psquid:S2077$"RUse a variable binding mechanism to construct this query instead of concatenation.(å°Ç˜8°«†Ç-
+psquid:S2077"RUse a variable binding mechanism to construct this query instead of concatenation.(ÉÛ£Ç8°«†Ç-
+]squid:S1118":Add a private constructor to hide the implicit public one.(Ù€Ûøÿÿÿÿ8°«†Ç-
+Fsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8°«†Ç-
+Fsquid:S1148&"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8°«†Ç-
+Fsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8°«†Ç-
+osquid:UselessImportCheck"?Remove this unused import 'org.tfoms.snils.model.FindSnilsBig'.(æ”•úùÿÿÿÿ8Ì¨Ê†Ç-

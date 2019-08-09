@@ -1,0 +1,8 @@
+
+Fsquid:S1148]"#Use a logger to log this exception.(§ ÇÊÿÿÿÿÿ8œ…Á…Ç-
+isquid:CommentedOutCodeLineR"<This block of commented-out lines of code should be removed.(¡ÎÄ8œ…Á…Ç-
+Xsquid:UselessImportCheck"-Remove this unused import 'org.w3c.dom.Attr'.(öÇ£Ð8ÔÐÙ…Ç-
+xsquid:S4435L"ZSecure this "Transformer" by either disabling external DTDs or enabling secure processing.(Ý‰Ë–8œ…Á…Ç-
+[
+squid:S106X"9Replace this use of System.out or System.err by a logger.(þ³æýÿÿÿÿ8œ…Á…Ç-
+Fsquid:S1148_"#Use a logger to log this exception.(®ùµÓøÿÿÿÿ8œ…Á…Ç-
