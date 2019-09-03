@@ -1,5 +1,5 @@
 
-[squid:S1118":Add a private constructor to hide the implicit public one.(‡Œïøşÿÿÿÿ8Éü•„Ç-
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Éü•„Ç-
-Rsquid:UselessImportCheck")Remove this unused import 'java.io.File'.(†Ğ¥Å8Éü•„Ç-
-|squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ğ­Óúÿÿÿÿ8Éü•„Ç-
+Fsquid:S1148 "#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Éü•„Ç-
+]squid:S1118":Add a private constructor to hide the implicit public one.(‡Œïøşÿÿÿÿ8Éü•„Ç-
+Tsquid:UselessImportCheck")Remove this unused import 'java.io.File'.(†Ğ¥Å8Éü•„Ç-
+~squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ğ­Óúÿÿÿÿ8Éü•„Ç-

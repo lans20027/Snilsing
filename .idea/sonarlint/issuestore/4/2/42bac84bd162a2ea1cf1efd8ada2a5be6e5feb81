@@ -1,8 +1,27 @@
 
-Fsquid:S1148]"#Use a logger to log this exception.(§ ÇÊÿÿÿÿÿ8œ…Á…Ç-
-isquid:CommentedOutCodeLineR"<This block of commented-out lines of code should be removed.(¡ÎÄ8œ…Á…Ç-
-Xsquid:UselessImportCheck"-Remove this unused import 'org.w3c.dom.Attr'.(öÇ£Ð8ÔÐÙ…Ç-
-xsquid:S4435L"ZSecure this "Transformer" by either disabling external DTDs or enabling secure processing.(Ý‰Ë–8œ…Á…Ç-
-[
-squid:S106X"9Replace this use of System.out or System.err by a logger.(þ³æýÿÿÿÿ8œ…Á…Ç-
-Fsquid:S1148_"#Use a logger to log this exception.(®ùµÓøÿÿÿÿ8œ…Á…Ç-
+ squid:S1186ç"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(éüÂý8»Ü¢ŽÎ-
+jsquid:CommentedOutCodeLine¡"<This block of commented-out lines of code should be removed.(¡ÎÄ8»Ü¢ŽÎ-
+‚squid:UselessImportCheck"RRemove this unused import 'javax.xml.transform.TransformerConfigurationException'.(Î¯«¶ûÿÿÿÿ8»Ü¢ŽÎ-
+jsquid:CommentedOutCodeLineß"<This block of commented-out lines of code should be removed.(ˆûµï8»Ü¢ŽÎ-
+osquid:CommentedOutCodeLine¬"<This block of commented-out lines of code should be removed.(áçÛ²þÿÿÿÿ8»Ü¢ŽÎ-
+jsquid:CommentedOutCodeLine¥"<This block of commented-out lines of code should be removed.(¡ÎÄ8»Ü¢ŽÎ-
+isquid:CommentedOutCodeLinep"<This block of commented-out lines of code should be removed.( ½–§8»Ü¢ŽÎ-
+isquid:CommentedOutCodeLines"<This block of commented-out lines of code should be removed.(îº‡8»Ü¢ŽÎ-
+§%squid:RedundantThrowsDeclarationCheck³"iRemove the declaration of thrown exception 'java.lang.NullPointerException' which is a runtime exception.(À—•¹ýÿÿÿÿ8»Ü¢ŽÎ-
+isquid:CommentedOutCodeLined"<This block of commented-out lines of code should be removed.(¬¼‹ó8»Ü¢ŽÎ-
+jsquid:CommentedOutCodeLineÔ"<This block of commented-out lines of code should be removed.(ÊŸš„8»Ü¢ŽÎ-
+isquid:CommentedOutCodeLinej"<This block of commented-out lines of code should be removed.(–˜ŒÅ8»Ü¢ŽÎ-
+jsquid:CommentedOutCodeLine¡"<This block of commented-out lines of code should be removed.(Ä¦ˆ8ãžýŽÎ-
+dsquid:UselessImportCheck"9Remove this unused import 'org.tfoms.snils.model.Person'.(æüÀ“8»Ü¢ŽÎ-
+osquid:CommentedOutCodeLinež"<This block of commented-out lines of code should be removed.(É¥ßõýÿÿÿÿ8»Ü¢ŽÎ-
+ysquid:S4435š"ZSecure this "Transformer" by either disabling external DTDs or enabling secure processing.(Ý‰Ë–8»Ü¢ŽÎ-
+Xsquid:UselessImportCheck"-Remove this unused import 'org.w3c.dom.Attr'.(öÇ£Ð8»Ü¢ŽÎ-
+W
+squid:S106®"9Replace this use of System.out or System.err by a logger.(‰ëÞˆ8»Ü¢ŽÎ-
+nsquid:CommentedOutCodeLinem"<This block of commented-out lines of code should be removed.(º»çåøÿÿÿÿ8»Ü¢ŽÎ-
+\
+squid:S106ª"9Replace this use of System.out or System.err by a logger.(Ç¨–¢øÿÿÿÿ8»Ü¢ŽÎ-
+isquid:CommentedOutCodeLineu"<This block of commented-out lines of code should be removed.(¢Ç©©8»Ü¢ŽÎ-
+ysquid:S4435ž"ZSecure this "Transformer" by either disabling external DTDs or enabling secure processing.(Ý‰Ë–8»Ü¢ŽÎ-
+jsquid:CommentedOutCodeLine¨"<This block of commented-out lines of code should be removed.(Å¹„8»Ü¢ŽÎ-
+dsquid:S2147ª"ECombine this catch with the one at line 167, which has the same body.(ÿÍÐ‰8»Ü¢ŽÎ-

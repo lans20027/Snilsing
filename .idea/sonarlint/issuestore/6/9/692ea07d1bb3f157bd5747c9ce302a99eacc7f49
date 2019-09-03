@@ -1,3 +1,6 @@
 
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8ºÌ§…Ç-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(ã¿¢Ôùÿÿÿÿ8›º¢şÎ-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ãøî°8˜Šğ†Î-
+§%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÙØ¤Şıÿÿÿÿ8°Ê¤‡Î-
+osquid:UselessImportCheck"ARemove this unused import 'javax.persistence.PersistenceContext'.(ê°İÒıÿÿÿÿ8Õ²ùƒÎ-

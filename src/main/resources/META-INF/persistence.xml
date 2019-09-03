@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="developerUnit">
+        <class>org.tfoms.snils.model.FindSnils</class>
+        <class>org.tfoms.snils.model.Person</class>
+        <class>org.tfoms.snils.model.Personadd</class>
+        <class>org.tfoms.snils.model.SnilsSaveResponse</class>
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.driver.OracleDriver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@srv-oracle03:1521:dame"/>
+            <property name="javax.persistence.jdbc.user" value="developer"/>
+            <property name="javax.persistence.jdbc.password" value="asu"/>
+            <property name="hibernate.show_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>

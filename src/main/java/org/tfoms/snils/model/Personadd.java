@@ -3,16 +3,19 @@ package org.tfoms.snils.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import java.util.Date;
 
 @Entity
 public class Personadd {
 
     @Id
-    private Long personadd_addressid;
+    private String personadd_addressid;
 
     private String born;
 
+    @Temporal(TemporalType.DATE)
     private Date datepassport;
 
     private String dok_vi;
@@ -27,11 +30,11 @@ public class Personadd {
                 '}';
     }
 
-    public Long getPersonadd_addressid() {
+    public String getPersonadd_addressid() {
         return personadd_addressid;
     }
 
-    public void setPersonadd_addressid(Long personadd_addressid) {
+    public void setPersonadd_addressid(String personadd_addressid) {
         this.personadd_addressid = personadd_addressid;
     }
 

@@ -14,11 +14,18 @@ public class MainWindow extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        String index = "fxml/index.fxml";
         FXMLLoader loader = new FXMLLoader();
-        Parent root = (Parent) loader.load(getClass().getResourceAsStream(index));
-        primaryStage.setTitle("Снилсование");
+        Parent root = (Parent) loader.load(getClass().getClassLoader().getResourceAsStream("fxml/index.fxml"));
+
         primaryStage.setScene(new Scene(root));
+        primaryStage.setTitle("Снилс");
         primaryStage.show();
+    }
+
+
+    @Override
+    public void stop() throws Exception {
+        super.stop();
+        System.exit(0);
     }
 }

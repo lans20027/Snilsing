@@ -1,68 +1,86 @@
 package org.tfoms.snils.model;
 
+import javafx.scene.control.Tab;
 
-import javax.persistence.*;
 import java.util.Date;
 
-@Entity
-@NamedQueries({
-        @NamedQuery(name = "personByFIOD",query = "from Person p " +
-                "where p.personSurname=:surname " +
-                "and p.personFirstname=:firstname " +
-                "and p.personLastname=:lastname " +
-                "and p.personBirthday=:birthday " )
-})
-public class Person {
-    @Id
-    private String person_addressid;
-
-    @Column(name = "person_sex")
+public class TablePerson {
+    private String snils;
+    private String enp;
+    private String personSurname;
+    private String personFirstname;
+    private String personLastname;
+    private Date personBirthday;
+    private String personSerdoc;
+    private String personNumdoc;
+    private Personadd personadd;
     private String sex;
 
-    private String enp;
-
-    @Column(name = "person_surname")
-    private String personSurname;
-
-    @Column(name = "person_kindfirstname")
-    private String personFirstname;
-
-    @Column(name = "person_kindlastname")
-    private String personLastname;
-
-    @Column(name = "person_birthday")
-    @Temporal(TemporalType.DATE)
-    private Date personBirthday;
-
-    @Column(name = "person_serdoc")
-    private String personSerdoc;
-
-    @Column(name = "person_numdoc")
-    private String personNumdoc;
-
-    @Column(name = "person_linksmoestablishmentid")
-    private String smo;
-
-    @OneToOne
-    @JoinColumn(name="person_addressid",referencedColumnName = "personadd_addressid")
-    private Personadd personadd;
 
 
-
-    public String getPerson_addressid() {
-        return person_addressid;
+    public TablePerson(SnilsSaveResponse s){
+        this.snils = s.getSnils();
+        this.enp = s.getEnp();
+        this.personSurname = s.getPersonSurname();
+        this.personFirstname = s.getPersonFirstname();
+        this.personLastname = s.getPersonLastname();
+        this.personBirthday = s.getPersonBirthday();
+        this.personSerdoc = s.getPersonSerdoc();
+        this.personNumdoc = s.getPersonNumdoc();
+        this.personSerdoc = "-";
+        this.personNumdoc = "-";
     }
 
-    public void setPerson_addressid(String person_addressid) {
-        this.person_addressid = person_addressid;
+    public TablePerson(Prizyvnik person,Personadd personadd){
+        this.snils = "-";
+        this.enp = person.getEnpVnutr();
+        this.personSurname = person.getFam();
+        this.personFirstname = person.getIm();
+        this.personLastname = person.getOt();
+        this.personBirthday = person.getDr();
+        this.personSerdoc = person.getSer();
+        this.personNumdoc = person.getNum();
+        this.personadd = personadd;
+        this.sex = person.getSex();
+    }
+
+    public TablePerson(Person person){
+        this.snils = "-";
+        this.enp = person.getEnp();
+        this.personSurname = person.getPersonSurname();
+        this.personFirstname = person.getPersonFirstname();
+        this.personLastname = person.getPersonLastname();
+        this.personBirthday = person.getPersonBirthday();
+        this.personSerdoc = person.getPersonSerdoc();
+        this.personNumdoc = person.getPersonNumdoc();
+        this.personadd = person.getPersonadd();
+        this.sex = person.getSex();
+    }
+
+
+
+    public Personadd getPersonadd() {
+        return personadd;
+    }
+
+    public void setPersonadd(Personadd personadd) {
+        this.personadd = personadd;
     }
 
     public String getSex() {
-        return sex.equals("0") ? "Male" : "Female";
+        return sex;
     }
 
     public void setSex(String sex) {
         this.sex = sex;
+    }
+
+    public String getSnils(){
+        return snils;
+    }
+
+    public void setSnils(String snils) {
+        this.snils = snils;
     }
 
     public String getEnp() {
@@ -121,28 +139,10 @@ public class Person {
         this.personNumdoc = personNumdoc;
     }
 
-    public String getSmo() {
-        return smo;
-    }
-
-    public void setSmo(String smo) {
-        this.smo = smo;
-    }
-
-
-    public Personadd getPersonadd() {
-        return personadd;
-    }
-
-    public void setPersonadd(Personadd personadd) {
-        this.personadd = personadd;
-    }
-
     @Override
     public String toString() {
-        return "Person{" +
-                "person_addressid='" + person_addressid + '\'' +
-                ", sex='" + sex + '\'' +
+        return "TablePerson{" +
+                "snils='" + snils + '\'' +
                 ", enp='" + enp + '\'' +
                 ", personSurname='" + personSurname + '\'' +
                 ", personFirstname='" + personFirstname + '\'' +
@@ -150,8 +150,8 @@ public class Person {
                 ", personBirthday=" + personBirthday +
                 ", personSerdoc='" + personSerdoc + '\'' +
                 ", personNumdoc='" + personNumdoc + '\'' +
-                ", smo='" + smo + '\'' +
                 ", personadd=" + personadd +
+                ", sex='" + sex + '\'' +
                 '}';
     }
 }

@@ -3,14 +3,19 @@ package org.tfoms.snils.model;
 
 import org.hibernate.annotations.NotFound;
 
+import javax.inject.Named;
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
 @Table(name = "Z_PERSON_FIND_SNILS")
+@NamedQueries({
+        @NamedQuery(name = "findById",query = "select f from FindSnils f where f.id = :id_param"),
+        @NamedQuery(name = "findSome", query = "from FindSnils f where rownum <= :num_param")
+})
 public class FindSnils {
     @Id
-    private Long id;
+    private String id;
 
     private String enp;
 
@@ -20,6 +25,8 @@ public class FindSnils {
 
     private String ot;
 
+
+    @Temporal(TemporalType.DATE)
     private Date dr;
 
     private String serdoc;
@@ -28,7 +35,7 @@ public class FindSnils {
 
     private String gd;
 
-    private Integer state;
+    private String state;
 
     @OneToOne
     @JoinColumn(name = "id",referencedColumnName = "person_addressid")
@@ -72,11 +79,11 @@ public class FindSnils {
         this.person = person;
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -144,11 +151,11 @@ public class FindSnils {
         this.gd = gd;
     }
 
-    public Integer getState() {
+    public String getState() {
         return state;
     }
 
-    public void setState(Integer state) {
+    public void setState(String state) {
         this.state = state;
     }
 }
