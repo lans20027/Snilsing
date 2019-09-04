@@ -1,58 +1,58 @@
 
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(©ô¸„ÿÿÿÿÿ8È¿õ€Ï-
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(ë›é„üÿÿÿÿ8È¿õ€Ï-
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÂÍ“Ã8È¿õ€Ï-
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¤ê”Øûÿÿÿÿ8È¿õ€Ï-
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(©ò¬·üÿÿÿÿ8È¿õ€Ï-
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(÷ÞÁ«8È¿õ€Ï-
-S
-squid:S106"9Replace this use of System.out or System.err by a logger.(í·(8È¿õ€Ï-
-Gsquid:S1481"&Remove this unused "i" local variable.(ùó›Ìøÿÿÿÿ8È¿õ€Ï-
-ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(™…ÚŸÿÿÿÿÿ8È¿õ€Ï-
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(”èö³8È¿õ€Ï-
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(¤ªç’8È¿õ€Ï-
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(µ‹©¯üÿÿÿÿ8È¿õ€Ï-
-bsquid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8È¿õ€Ï-
-Fsquid:S00108")Either remove or fill this block of code.(”ý¾8È¿õ€Ï-
-Hsquid:S1602",Remove useless curly braces around statement(ÃÉþ©8È¿õ€Ï-
-Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8È¿õ€Ï-
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(óÐ…°8È¿õ€Ï-
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(œõõ•8È¿õ€Ï-
-csquid:S1854"BRemove this useless assignment to local variable "directoryError".(žð¥Ÿýÿÿÿÿ8È¿õ€Ï-
-=squid:S1170"!Make this final field static too.(±€¡Ü8È¿õ€Ï-
-Hsquid:S1612",Replace this lambda with a method reference.(üåŒõ8È¿õ€Ï-
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(•ž¯©ÿÿÿÿÿ8È¿õ€Ï-
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(íí¹à8È¿õ€Ï-
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ßÄÎè8Ðýô€Ï-
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(àþµ¢úÿÿÿÿ8È¿õ€Ï-
-Tsquid:S1481"3Remove this unused "directoryError" local variable.(žð¥Ÿýÿÿÿÿ8È¿õ€Ï-
-Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8È¿õ€Ï-
-nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(û‹Ž8È¿õ€Ï-
-hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(ÀÏøÐþÿÿÿÿ8È¿õ€Ï-
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(à±úÜÿÿÿÿÿ8È¿õ€Ï-
-csquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(Ïÿ€Ð8È¿õ€Ï-
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÔØ‹¿øÿÿÿÿ8È¿õ€Ï-
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(–žûüÿÿÿÿ8È¿õ€Ï-
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(úæëøÿÿÿÿ8È¿õ€Ï-
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(•®­—üÿÿÿÿ8È¿õ€Ï-
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(ªõ²¸ùÿÿÿÿ8È¿õ€Ï-
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(³ÚÀæûÿÿÿÿ8È¿õ€Ï-
+osquid:CommentedOutCodeLine“"<This block of commented-out lines of code should be removed.(¤ê”Øûÿÿÿÿ8È¿õ€Ï-
+W
+squid:S106â"9Replace this use of System.out or System.err by a logger.(÷ÞÁ«8È¿õ€Ï-
+\
+squid:S106ƒ"9Replace this use of System.out or System.err by a logger.(–žûüÿÿÿÿ8È¿õ€Ï-
+[
+squid:S106y"9Replace this use of System.out or System.err by a logger.(àþµ¢úÿÿÿÿ8È¿õ€Ï-
+Wsquid:S1481½"3Remove this unused "directoryError" local variable.(žð¥Ÿýÿÿÿÿ8È¿õ€Ï-
+qsquid:S3776œ"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(û‹Ž8È¿õ€Ï-
+Isquid:S00108•")Either remove or fill this block of code.(”ý¾8È¿õ€Ï-
+fsquid:S00112ó"FDefine and throw a dedicated exception instead of using a generic one.(Ïÿ€Ð8È¿õ€Ï-
+\
+squid:S106Ý"9Replace this use of System.out or System.err by a logger.(ÔØ‹¿øÿÿÿÿ8È¿õ€Ï-
+Ysquid:S1141ú"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8È¿õ€Ï-
+nsquid:CommentedOutCodeLinef"<This block of commented-out lines of code should be removed.(µ‹©¯üÿÿÿÿ8È¿õ€Ï-
+Ksquid:S1602Ð",Remove useless curly braces around statement(ÃÉþ©8È¿õ€Ï-
+W
+squid:S106Ü"9Replace this use of System.out or System.err by a logger.(óÐ…°8È¿õ€Ï-
+Ksquid:S1612ò",Replace this lambda with a method reference.(üåŒõ8È¿õ€Ï-
+W
+squid:S106ð"9Replace this use of System.out or System.err by a logger.(œõõ•8È¿õ€Ï-
+W
+squid:S106…"9Replace this use of System.out or System.err by a logger.(¤ªç’8È¿õ€Ï-
+V
+squid:S106z"9Replace this use of System.out or System.err by a logger.(ßÄÎè8Ðýô€Ï-
+\
+squid:S106°"9Replace this use of System.out or System.err by a logger.(úæëøÿÿÿÿ8È¿õ€Ï-
+\
+squid:S106•"9Replace this use of System.out or System.err by a logger.(à±úÜÿÿÿÿÿ8È¿õ€Ï-
+ksquid:S00112‚"FDefine and throw a dedicated exception instead of using a generic one.(ÀÏøÐþÿÿÿÿ8È¿õ€Ï-
+vsquid:S3776Á"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(™…ÚŸÿÿÿÿÿ8È¿õ€Ï-
+Jsquid:S1481¨"&Remove this unused "i" local variable.(ùó›Ìøÿÿÿÿ8È¿õ€Ï-
+\
+squid:S106ì"9Replace this use of System.out or System.err by a logger.(ªõ²¸ùÿÿÿÿ8È¿õ€Ï-
+V
+squid:S106÷"9Replace this use of System.out or System.err by a logger.(í·(8È¿õ€Ï-
+esquid:S2142ô"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8È¿õ€Ï-
+W
+squid:S106è"9Replace this use of System.out or System.err by a logger.(”èö³8È¿õ€Ï-
+?squid:S1170R"!Make this final field static too.(±€¡Ü8È¿õ€Ï-
+\
+squid:S106æ"9Replace this use of System.out or System.err by a logger.(ë›é„üÿÿÿÿ8È¿õ€Ï-
+Ysquid:S1141à"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8È¿õ€Ï-
+fsquid:S1854½"BRemove this useless assignment to local variable "directoryError".(žð¥Ÿýÿÿÿÿ8È¿õ€Ï-
+W
+squid:S106‹"9Replace this use of System.out or System.err by a logger.(ÂÍ“Ã8È¿õ€Ï-
+osquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(•ž¯©ÿÿÿÿÿ8È¿õ€Ï-
+[
+squid:S106}"9Replace this use of System.out or System.err by a logger.(³ÚÀæûÿÿÿÿ8È¿õ€Ï-
+[
+squid:S106d"9Replace this use of System.out or System.err by a logger.(©ò¬·üÿÿÿÿ8È¿õ€Ï-
+\
+squid:S106"9Replace this use of System.out or System.err by a logger.(©ô¸„ÿÿÿÿÿ8È¿õ€Ï-
+W
+squid:S106ä"9Replace this use of System.out or System.err by a logger.(íí¹à8È¿õ€Ï-
+\
+squid:S106‡"9Replace this use of System.out or System.err by a logger.(•®­—üÿÿÿÿ8È¿õ€Ï-

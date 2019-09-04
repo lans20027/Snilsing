@@ -13,26 +13,21 @@ import java.util.*;
 
 public class Main {
     public static void main(String [] args) throws Exception{
+        ArrayList<String> enps = new ArrayList<>();
+        enps.add("5456600838000326");
 
-
-/*        ArrayList<String> enps = new ArrayList<>();
-        enps.add("5478960884000016");
-
-        List<Person> result = FindSnilsDAO.findPersonByEnp(enps);
-
-        TablePerson person = new TablePerson(result.get(0));
-        System.out.println(result.get(0));
+        List<TablePerson> result = FindSnilsDAO.findPersonByEnp1(enps);
 
         XmlParser parser = new XmlParser();
 
-        parser.createDocument(person);
-        */
-        EntityManagerFactory managerFactory = Persistence.createEntityManagerFactory("developerUnit");
+        parser.createDocument(result.get(0));
+/*        EntityManagerFactory managerFactory = Persistence.createEntityManagerFactory("developerUnit");
         EntityManager em =managerFactory.createEntityManager();
 
         List<SnilsSaveResponse> list = em.createNamedQuery("findSnilsGood",SnilsSaveResponse.class).getResultList();
 
-        System.out.println(list);
+        System.out.println(list);*/
+
         System.exit(0);
     }
 }

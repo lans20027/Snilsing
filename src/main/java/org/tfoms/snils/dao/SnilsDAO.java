@@ -66,8 +66,4 @@ public class SnilsDAO {
         }
         em.getTransaction().commit();
     }
-
-
-
-
 }

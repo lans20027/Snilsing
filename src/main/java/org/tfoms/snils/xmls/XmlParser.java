@@ -3,6 +3,9 @@ package org.tfoms.snils.xmls;
 import org.tfoms.snils.model.FindSnils;
 import java.io.File;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.UUID;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -244,12 +247,12 @@ public class XmlParser {
             gender.appendChild(document.createTextNode(person.getSex()));
             root.appendChild(gender);
 
-
-            Element birthPlace = parseBirthPlace(person,document);
-            if(birthPlace != null) {
-                root.appendChild(birthPlace);
+            if(person.getPersonadd() != null) {
+                Element birthPlace = parseBirthPlace(person.getPersonadd(), document);
+                if (birthPlace != null) {
+                    root.appendChild(birthPlace);
+                }
             }
-
 
             Element passport = document.createElement("smev:PassportRF");
 
@@ -261,17 +264,18 @@ public class XmlParser {
             number.appendChild(document.createTextNode(person.getPersonNumdoc()));
             passport.appendChild(number);
 
-            if(person.getPersonadd().getDatepassport() != null) {
-                Element issueDate = document.createElement("smev:IssueDate");
-                issueDate.appendChild(document.createTextNode(person.getPersonadd().getDatepassport() != null ? dateFormat.format(person.getPersonadd().getDatepassport()) : "-"));
-                passport.appendChild(issueDate);
+            if(person.getPersonadd() != null) {
+                if (person.getPersonadd().getDatepassport() != null) {
+                    Element issueDate = document.createElement("smev:IssueDate");
+                    issueDate.appendChild(document.createTextNode(person.getPersonadd().getDatepassport() != null ? dateFormat.format(person.getPersonadd().getDatepassport()) : "-"));
+                    passport.appendChild(issueDate);
+                }
+                if (person.getPersonadd().getDok_vi() != null) {
+                    Element issuer = document.createElement("smev:Issuer");
+                    issuer.appendChild(document.createTextNode(person.getPersonadd().getDok_vi() != null ? person.getPersonadd().getDok_vi() : "-"));
+                    passport.appendChild(issuer);
+                }
             }
-            if(person.getPersonadd().getDok_vi()!=null) {
-                Element issuer = document.createElement("smev:Issuer");
-                issuer.appendChild(document.createTextNode(person.getPersonadd().getDok_vi() != null ? person.getPersonadd().getDok_vi() : "-"));
-                passport.appendChild(issuer);
-            }
-
             root.appendChild(passport);
 
 
@@ -286,7 +290,7 @@ public class XmlParser {
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
             DOMSource domSource = new DOMSource(document);
-//            StreamResult streamResult = new StreamResult(new File("documents/" + person.getEnp() + ".xml"));
+            StreamResult streamResult1 = new StreamResult(new File("documents/" + person.getEnp() + ".xml"));
             StreamResult streamResult = new StreamResult(new File("\\\\Srv-term03\\542202_3s\\out\\" + person.getEnp() + ".xml"));
 
             // If you use
@@ -294,63 +298,129 @@ public class XmlParser {
             // the output will be pushed to the standard output ...
             // You can use that for debugging
 
-            transformer.transform(domSource, streamResult);
+//            transformer.transform(domSource, streamResult);
+            transformer.transform(domSource, streamResult1);
             System.out.println(person.getEnp() + " - create good!");
             return true;
     }
 
 
 
-    private Element parseBirthPlace(TablePerson person,Document document){
-            Personadd p = person.getPersonadd();
-            String bornString = p == null ? null : p.getBorn();
-            if(bornString == null) return null;
+    private Element parseBirthPlace(Personadd p,Document document){
+            System.out.println("parse address:" + p);
+            String bornString = p.getBorn();
+            if(bornString == null || bornString.length() == 0) return null;
+            bornString = bornString.toUpperCase();
+
+            String[] prefTown = {"гор","город","село","с","г.","гор.","г","с.","п.","пос.","р.п.","р-п","пос.г.т.","п.г.т.","д.","дер.","деревня"};
+            String[] postReg = {"ОБЛАСТЬ","ОБЛ.","ОБЛАСТИ"};
+            String[] postReg1 = {"КРАЙ","КРАЯ","КР."};
+            String[] postDist = {"РАЙОН","РАЙОНА","Р-ОН","Р-ОНА","Р-НА"};
 
             String town = "";
+            String region = "";
+            int regInd = 0;
 
-            if(bornString.trim().equalsIgnoreCase("новосибирск")) {
-                town = "НОВОСИБИРСК";
+            String district = "";
+
+
+            if(!bornString.trim().contains(" ")){
+                town = bornString.trim().toUpperCase();
             }else{
                 String[] strs = bornString.trim().split(" ");
-
-                for(int i =0; i < strs.length; i++){
-                    if(strs[i].equalsIgnoreCase("гор")
-                            || strs[i].equalsIgnoreCase("город")
-                            || strs[i].equalsIgnoreCase("г.")
-                            || strs[i].equalsIgnoreCase("гор.")
-                            || strs[i].equalsIgnoreCase("г")){
-                        try {
+                System.out.println(strs.length);
+                for(int i = 0; i < strs.length; i++){
+                    for(String prefix : prefTown){
+                        if(prefix.equalsIgnoreCase(strs[i])){
                             town = strs[i + 1].toUpperCase();
-                        }catch (IndexOutOfBoundsException e){
-                            town = "";
+                            if(town.equals("НИЖНИЙ") || town.equals("ВЕРХНИЙ")){
+                                town = town + " " + strs[i + 2];
+                            }
+                        }
+                    }
+
+                    for(String postfix : postReg){
+                        if(postfix.equals(strs[i].replaceAll(",",""))){
+                            region = strs[i - 1];
+                        }
+                    }
+
+                    for(String postfix : postReg1){
+                        if(postfix.equals(strs[i].replaceAll(",",""))){
+                            region = strs[i - 1];
+                            regInd = 1;
+                        }
+                    }
+
+                    for(String postfix : postDist){
+                        if(postfix.equals(strs[i].replaceAll(",",""))){
+                            district = strs[i - 1];
+                        }
+                    }
+
+                }
+
+                for(String s : strs){
+                    for(String prefix : prefTown){
+                        if(prefix.contains(".")){
+                            if(s.startsWith(prefix.toUpperCase()) && s.length() > prefix.length()){
+                                town = (s.substring(prefix.length()));
+                            }
                         }
                     }
                 }
+                town = town.replaceAll(",","");
+                region = region.replaceAll(",","");
             }
+
+
 
             if(town.equals("")) return null;
 
+            if(region.endsWith("КОГО")){
+                region = region.substring(0,region.length() - 4);
+                region = region + "КИЙ" + " " + "КРАЙ";
+                //(regInd == 1 ? postReg1[0] : postReg[0])новосибирской
+            }else if(region.endsWith("КОЙ")){
+                region = region.substring(0,region.length() - 3)
+                        + "КАЯ" + " " + "ОБЛАСТЬ";
+            }else if(!region.equals("")){
+                region = region + " " + (regInd == 1 ? postReg1[0] : postReg[0]);
+            }
+
+            if(district.endsWith("КОГО")){
+                district = district.substring(0,district.length() - 4) + "КИЙ";
+            }
+
+            System.out.println("town:" + town);
+            System.out.println("district:" + district);
+            System.out.println("region:" + region);
+
             Element birthPlace = document.createElement("tns:BirthPlace");
             Element placeType = document.createElement("pfr:PlaceType");
-            placeType.appendChild(document.createTextNode("ОСОБОЕ"));
+            placeType.appendChild(document.createTextNode((!district.equals("") && !region.equals("")) ? "СТАНДАРТНОЕ" : "ОСОБОЕ"));
+            birthPlace.appendChild(placeType);
+
 
             Element settlement = document.createElement("pfr:Settlement");
             settlement.appendChild(document.createTextNode(town));
-/*
-            Element disctrict = document.createElement("pfr:District");
-            disctrict.appendChild(document.createTextNode("ЖЕЛЕЗИНСКИЙ"));
-
-            Element region = document.createElement("pfr:Region");
-            region.appendChild(document.createTextNode("ИРКУТСКАЯ ОБЛАСТЬ"));
-
-            Element country = document.createElement("pfr:Country");
-            country.appendChild(document.createTextNode("РОССИЙСКАЯ ФЕДЕРАЦИЯ"));*/
-
-            birthPlace.appendChild(placeType);
             birthPlace.appendChild(settlement);
-/*            birthPlace.appendChild(disctrict);
-            birthPlace.appendChild(region);
-            birthPlace.appendChild(country);*/
+
+            if(!district.equals("")) {
+                Element disctrict = document.createElement("pfr:District");
+                disctrict.appendChild(document.createTextNode(district));
+                birthPlace.appendChild(disctrict);
+            }
+            if(!region.equals("")) {
+                Element reg = document.createElement("pfr:Region");
+                reg.appendChild(document.createTextNode(region));
+                birthPlace.appendChild(reg);
+            }
+            /*
+            Element country = document.createElement("pfr:Country");
+            country.appendChild(document.createTextNode("РОССИЙСКАЯ ФЕДЕРАЦИЯ"));
+            birthPlace.appendChild(country);
+            */
 
             return birthPlace;
     }

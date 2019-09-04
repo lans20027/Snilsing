@@ -7,38 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19bf039f-21b3-4731-8ae1-5f4ab1d3b4e7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/dao/SnilsDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/exceptions/ExcelProcessingException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/Prizyvnik.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/SnilsSaveResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/TablePerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/xmls/IsFileExistsThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/4/242dfa5e1e20de00f762bb830040fb8ecad87159" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/4/242dfa5e1e20de00f762bb830040fb8ecad87159" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/33ea0e63c46b578084a7e47abbb16d341f644563" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/33ea0e63c46b578084a7e47abbb16d341f644563" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/2/42bac84bd162a2ea1cf1efd8ada2a5be6e5feb81" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/2/42bac84bd162a2ea1cf1efd8ada2a5be6e5feb81" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/44e2ddc090849425e7b9d5667235e138645ed5ed" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/44e2ddc090849425e7b9d5667235e138645ed5ed" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/58c4edda144aa5e99f1d9609dec5e90f05f322ed" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/58c4edda144aa5e99f1d9609dec5e90f05f322ed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/3/532c5ef47530785cbdd15e9c9bfb350875554565" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/3/532c5ef47530785cbdd15e9c9bfb350875554565" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/692ea07d1bb3f157bd5747c9ce302a99eacc7f49" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/692ea07d1bb3f157bd5747c9ce302a99eacc7f49" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/744602da414fe6553fb34401d301b848b8d83252" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/744602da414fe6553fb34401d301b848b8d83252" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a690ff176390b666452b1bc97b3419628009748e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a690ff176390b666452b1bc97b3419628009748e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ad7a558eb2474d01e19cfb48c74a28d88d8538e4" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ad7a558eb2474d01e19cfb48c74a28d88d8538e4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snilsing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Snilsing.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/65BE980D9FD34A4482992A437BFB172F.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/E9B0B7F79B3B43D69B81A56232035712.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/dao/FindSnilsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/dao/FindSnilsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/fxcontrollers/FindPersonDialogController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/fxcontrollers/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/fxcontrollers/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/FindSnils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/FindSnils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/Personadd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/Personadd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/dao/SnilsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/dao/SnilsDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/xmls/XmlParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/xmls/XmlParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/FindPersonDialog.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/index.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/index.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -73,7 +51,7 @@
       <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/fxcontrollers/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="3893">
               <caret line="267" column="33" selection-start-line="267" selection-start-column="33" selection-end-line="267" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -89,20 +67,8 @@
       <file leaf-file-name="FindSnilsDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/dao/FindSnilsDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SnilsSaveResponse.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/SnilsSaveResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="109" lean-forward="true" selection-start-line="12" selection-start-column="109" selection-end-line="12" selection-end-column="109" />
+            <state relative-caret-position="255">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,8 +79,8 @@
       <file leaf-file-name="SnilsDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/dao/SnilsDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+            <state relative-caret-position="272">
+              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,7 +101,7 @@
       <file leaf-file-name="TablePerson.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/TablePerson.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
+            <state relative-caret-position="492">
               <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -147,19 +113,31 @@
       <file leaf-file-name="ExcelProcessingException.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/exceptions/ExcelProcessingException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state>
+              <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="220">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmlParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/xmls/XmlParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="118">
+              <caret line="381" column="55" lean-forward="true" selection-start-line="381" selection-start-column="55" selection-end-line="381" selection-end-column="55" />
+              <folding>
+                <element signature="method#createDocument#0;class#XmlParser#0" />
               </folding>
             </state>
           </provider>
@@ -206,15 +184,15 @@
         <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/Personadd.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/Person.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/Prizyvnik.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/xmls/XmlParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/exceptions/ExcelProcessingException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/SnilsSaveResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/TablePerson.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/dao/FindSnilsDAO.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/index.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/dao/SnilsDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/fxcontrollers/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/dao/SnilsDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/xmls/XmlParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/Main.java" />
       </list>
     </option>
   </component>
@@ -258,7 +236,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -270,6 +248,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -279,81 +258,12 @@
             </path>
             <path>
               <item name="Snilsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Snilsing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Snilsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Snilsing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Snilsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Snilsing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Snilsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Snilsing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="snils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Snilsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Snilsing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="snils" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Snilsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Snilsing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="snils" type="462c0819:PsiDirectoryNode" />
-              <item name="fxcontrollers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Snilsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Snilsing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="snils" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Snilsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Snilsing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Snilsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Snilsing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="fxml" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Snilsing" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
@@ -386,7 +296,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainWindow">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.tfoms.snils.Main" />
       <module name="Snilsing" />
@@ -464,8 +374,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainWindow" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MainWindow" />
         <item itemvalue="JAR Application.Snilsing-1.0-SNAPSHOT-jar-with-dependencies.jar" />
         <item itemvalue="JAR Application.Snilsing-1.0-SNAPSHOT.jar" />
       </list>
@@ -499,41 +409,53 @@
       <workItem from="1567389534713" duration="6568000" />
       <workItem from="1567397573362" duration="795000" />
       <workItem from="1567418102861" duration="634000" />
+      <workItem from="1567494228752" duration="1147000" />
+      <workItem from="1567498794266" duration="8376000" />
+      <workItem from="1567562525173" duration="8393000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166853000" />
+    <option name="totallyTimeSpent" value="184769000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info id="Image Layers" order="4" />
-      <window_info anchor="bottom" id="Java Enterprise" order="9" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50053304" side_tool="true" weight="0.2437432" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.20362474" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.27203482" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.27529925" />
       <window_info id="Capture Tool" order="7" />
-      <window_info id="Persistence" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4961915" visible="true" weight="0.14072494" />
-      <window_info anchor="bottom" id="SonarLint" order="10" />
       <window_info anchor="right" id="Database" order="5" weight="0.29904053" />
-      <window_info id="Structure" order="1" sideWeight="0.5038085" side_tool="true" visible="true" weight="0.14072494" />
+      <window_info id="Structure" order="1" sideWeight="0.5069686" side_tool="true" visible="true" weight="0.11886994" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="5" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934713" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3297062" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.3297062" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info id="Image Layers" order="4" />
+      <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.3297062" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.37540805" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.27529925" />
+      <window_info id="Persistence" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49303135" visible="true" weight="0.11886994" />
+      <window_info anchor="bottom" id="SonarLint" order="10" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934713" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.3297062" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -828,13 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/xmls/XmlParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="291" column="20" selection-start-line="291" selection-start-column="20" selection-end-line="291" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -842,64 +757,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/exceptions/ExcelProcessingException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/index.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="284" selection-start-line="20" selection-start-column="284" selection-end-line="20" selection-end-column="284" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/dao/SnilsDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/dao/FindSnilsDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/TablePerson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/fxcontrollers/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="3893">
           <caret line="267" column="33" selection-start-line="267" selection-start-column="33" selection-end-line="267" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -913,8 +773,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/SnilsSaveResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="109" lean-forward="true" selection-start-line="12" selection-start-column="109" selection-end-line="12" selection-end-column="109" />
+        <state relative-caret-position="306">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/dao/SnilsDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/dao/FindSnilsDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/exceptions/ExcelProcessingException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/TablePerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/index.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="284" selection-start-line="20" selection-start-column="284" selection-end-line="20" selection-end-column="284" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/xmls/XmlParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="381" column="55" lean-forward="true" selection-start-line="381" selection-start-column="55" selection-end-line="381" selection-end-column="55" />
+          <folding>
+            <element signature="method#createDocument#0;class#XmlParser#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
