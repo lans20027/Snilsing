@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -17,7 +23,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.tfoms.snils.fxcontrollers.IndexController">
+<BorderPane fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.tfoms.snils.fxcontrollers.IndexController">
    <center>
       <AnchorPane prefHeight="300.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -27,7 +33,7 @@
                      <children>
                         <StackPane prefHeight="473.0" prefWidth="446.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
-                              <TableView fx:id="personTableview" editable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="455.0" prefWidth="738.0">
+                              <TableView fx:id="personTableview" editable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="455.0" prefWidth="738.0" style="-fx-background-color: floralwhite;">
                                 <columns>
                                     <TableColumn fx:id="snilsCol" editable="false" prefWidth="75.0" text="SNILS" />
                                     <TableColumn fx:id="enpCol" prefWidth="75.0" text="ENP" />
@@ -48,7 +54,7 @@
                   </AnchorPane>
                   <AnchorPane minWidth="200.0" prefHeight="473.0" prefWidth="378.0">
                      <children>
-                        <VBox layoutX="64.0" layoutY="84.0" onMouseClicked="#removeSelection" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: dimgrey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <VBox layoutX="64.0" layoutY="84.0" onMouseClicked="#removeSelection" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: ghostwhite;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
                               <Button mnemonicParsing="false" onAction="#findSnilsGood" prefHeight="19.0" prefWidth="254.0" style="-fx-background-color: ghostwhite;" text="Готовые снилсы" textAlignment="CENTER">
                                  <font>
@@ -73,12 +79,13 @@
    <top>
       <AnchorPane prefHeight="12.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
          <children>
-            <MenuBar fx:id="menuBar" prefHeight="25.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <MenuBar fx:id="menuBar" prefHeight="25.0" prefWidth="1000.0" style="-fx-background-color: ghostwhite;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <menus>
                   <Menu fx:id="menuFile" mnemonicParsing="false" text="Файл">
                      <items>
                         <MenuItem fx:id="menuImport" mnemonicParsing="false" onAction="#importExcel" text="Импорт данных" />
                         <MenuItem fx:id="menuExport" mnemonicParsing="false" onAction="#exportExcel" text="Экпорт в эксель" />
+                        <MenuItem mnemonicParsing="false" text="Настройки" />
                      </items>
                   </Menu>
                </menus>
@@ -87,7 +94,7 @@
       </AnchorPane>
    </top>
    <bottom>
-      <AnchorPane prefHeight="1.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="1.0" prefWidth="1000.0" style="-fx-background-color: ghostwhite;" BorderPane.alignment="CENTER">
          <children>
             <ProgressBar fx:id="progressBar" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" progress="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
                <effect>

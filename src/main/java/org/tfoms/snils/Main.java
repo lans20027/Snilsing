@@ -25,10 +25,6 @@ class Thread1 extends Thread{
 
     }
 
-
-
-
-
     @Override
     public void run(){
         current = Thread.currentThread();
