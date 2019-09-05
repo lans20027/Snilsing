@@ -1,6 +1,6 @@
 
-rsquid:S001008"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êß‡¡úÿÿÿÿ8Ãæ‘‹Î-
-_squid:S1710"<Remove the 'NamedQueries' wrapper from this annotation group(¨‘¯¼ûÿÿÿÿ8Šò’‹Î-
-usquid:S001178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êß‡¡úÿÿÿÿ8Ãæ‘‹Î-
-zsquid:S00116"[Rename this field "person_addressid" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àíË¦8Ãæ‘‹Î-
-msquid:S001004"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñøÆ8Ãæ‘‹Î-
+]squid:S1710"<Remove the 'NamedQueries' wrapper from this annotation group(¨‘¯¼ûÿÿÿÿ8Šò’‹Î-
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êß‡¡úÿÿÿÿ8Ãæ‘‹Î-
+ssquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êß‡¡úÿÿÿÿ8Ãæ‘‹Î-
+xsquid:S00116"[Rename this field "person_addressid" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àíË¦8Ãæ‘‹Î-
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñøÆ8Ãæ‘‹Î-

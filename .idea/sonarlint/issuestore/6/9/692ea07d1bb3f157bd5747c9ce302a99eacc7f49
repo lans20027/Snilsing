@@ -1,4 +1,16 @@
 
-isquid:UselessImportCheck"9Remove this unused import 'org.tfoms.snils.dao.SnilsDAO'.(Ñ•“Ñýÿÿÿÿ8¤ÈÀ²Ï-
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Èó®ðúÿÿÿÿ8¤ÈÀ²Ï-
-qsquid:UselessImportCheck"ARemove this unused import 'javax.persistence.PersistenceContext'.(ê°ÝÒýÿÿÿÿ8Õ²ùƒÎ-
+bsquid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8°•ŽýÏ-
+osquid:UselessImportCheck"ARemove this unused import 'javax.persistence.PersistenceContext'.(ê°ÝÒýÿÿÿÿ8Õ²ùƒÎ-
+Msquid:S1602",Remove useless curly braces around statement(‹æÀ±øÿÿÿÿ8Âü†ýÏ-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(²ÿì’8°•ŽýÏ-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(æÙ©Þ8‡¶¥ýÏ-
+§%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÙØ¤Þýÿÿÿÿ8±÷Ó‚Ð-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(âª§‹þÿÿÿÿ8Âü†ýÏ-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(×Ø‰Öùÿÿÿÿ8ÍÑŒýÏ-
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ë§ç¶ûÿÿÿÿ8öªÇ‚Ð-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(ó¢ÐÑ8‘àÊ‚Ð-
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(´£ç‚øÿÿÿÿ8¶ëýÏ-
+Fsquid:S1068"*Remove this unused "toStop" private field.(®ÜÏû8ïÑ‚ýÏ-

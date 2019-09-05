@@ -1,6 +1,9 @@
 package org.tfoms.snils.model;
 
 
+import org.hibernate.annotations.NotFound;
+import org.hibernate.annotations.NotFoundAction;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -43,6 +46,7 @@ public class Person {
     @Column(name = "person_linksmoestablishmentid")
     private String smo;
 
+    @NotFound(action = NotFoundAction.IGNORE)
     @OneToOne
     @JoinColumn(name="person_addressid",referencedColumnName = "personadd_addressid")
     private Personadd personadd;

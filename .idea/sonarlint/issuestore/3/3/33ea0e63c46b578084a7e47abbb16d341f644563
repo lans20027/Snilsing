@@ -1,58 +1,37 @@
 
-osquid:CommentedOutCodeLine“"<This block of commented-out lines of code should be removed.(¤ê”Øûÿÿÿÿ8È¿õ€Ï-
-W
-squid:S106â"9Replace this use of System.out or System.err by a logger.(÷ÞÁ«8È¿õ€Ï-
-\
-squid:S106ƒ"9Replace this use of System.out or System.err by a logger.(–žûüÿÿÿÿ8È¿õ€Ï-
-[
-squid:S106y"9Replace this use of System.out or System.err by a logger.(àþµ¢úÿÿÿÿ8È¿õ€Ï-
-Wsquid:S1481½"3Remove this unused "directoryError" local variable.(žð¥Ÿýÿÿÿÿ8È¿õ€Ï-
-qsquid:S3776œ"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(û‹Ž8È¿õ€Ï-
-Isquid:S00108•")Either remove or fill this block of code.(”ý¾8È¿õ€Ï-
-fsquid:S00112ó"FDefine and throw a dedicated exception instead of using a generic one.(Ïÿ€Ð8È¿õ€Ï-
-\
-squid:S106Ý"9Replace this use of System.out or System.err by a logger.(ÔØ‹¿øÿÿÿÿ8È¿õ€Ï-
-Ysquid:S1141ú"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8È¿õ€Ï-
-nsquid:CommentedOutCodeLinef"<This block of commented-out lines of code should be removed.(µ‹©¯üÿÿÿÿ8È¿õ€Ï-
-Ksquid:S1602Ð",Remove useless curly braces around statement(ÃÉþ©8È¿õ€Ï-
-W
-squid:S106Ü"9Replace this use of System.out or System.err by a logger.(óÐ…°8È¿õ€Ï-
-Ksquid:S1612ò",Replace this lambda with a method reference.(üåŒõ8È¿õ€Ï-
-W
-squid:S106ð"9Replace this use of System.out or System.err by a logger.(œõõ•8È¿õ€Ï-
-W
-squid:S106…"9Replace this use of System.out or System.err by a logger.(¤ªç’8È¿õ€Ï-
-V
-squid:S106z"9Replace this use of System.out or System.err by a logger.(ßÄÎè8Ðýô€Ï-
-\
-squid:S106°"9Replace this use of System.out or System.err by a logger.(úæëøÿÿÿÿ8È¿õ€Ï-
-\
-squid:S106•"9Replace this use of System.out or System.err by a logger.(à±úÜÿÿÿÿÿ8È¿õ€Ï-
-ksquid:S00112‚"FDefine and throw a dedicated exception instead of using a generic one.(ÀÏøÐþÿÿÿÿ8È¿õ€Ï-
-vsquid:S3776Á"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(™…ÚŸÿÿÿÿÿ8È¿õ€Ï-
-Jsquid:S1481¨"&Remove this unused "i" local variable.(ùó›Ìøÿÿÿÿ8È¿õ€Ï-
-\
-squid:S106ì"9Replace this use of System.out or System.err by a logger.(ªõ²¸ùÿÿÿÿ8È¿õ€Ï-
-V
-squid:S106÷"9Replace this use of System.out or System.err by a logger.(í·(8È¿õ€Ï-
-esquid:S2142ô"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8È¿õ€Ï-
-W
-squid:S106è"9Replace this use of System.out or System.err by a logger.(”èö³8È¿õ€Ï-
-?squid:S1170R"!Make this final field static too.(±€¡Ü8È¿õ€Ï-
-\
-squid:S106æ"9Replace this use of System.out or System.err by a logger.(ë›é„üÿÿÿÿ8È¿õ€Ï-
-Ysquid:S1141à"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8È¿õ€Ï-
-fsquid:S1854½"BRemove this useless assignment to local variable "directoryError".(žð¥Ÿýÿÿÿÿ8È¿õ€Ï-
-W
-squid:S106‹"9Replace this use of System.out or System.err by a logger.(ÂÍ“Ã8È¿õ€Ï-
-osquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(•ž¯©ÿÿÿÿÿ8È¿õ€Ï-
-[
-squid:S106}"9Replace this use of System.out or System.err by a logger.(³ÚÀæûÿÿÿÿ8È¿õ€Ï-
-[
-squid:S106d"9Replace this use of System.out or System.err by a logger.(©ò¬·üÿÿÿÿ8È¿õ€Ï-
-\
-squid:S106"9Replace this use of System.out or System.err by a logger.(©ô¸„ÿÿÿÿÿ8È¿õ€Ï-
-W
-squid:S106ä"9Replace this use of System.out or System.err by a logger.(íí¹à8È¿õ€Ï-
-\
-squid:S106‡"9Replace this use of System.out or System.err by a logger.(•®­—üÿÿÿÿ8È¿õ€Ï-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(¤ªç’8¥Ÿ°„Ð-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(–žûüÿÿÿÿ8¥Ÿ°„Ð-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(©ô¸„ÿÿÿÿÿ8¥Ÿ°„Ð-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(¡ö¢½8¥Ÿ°„Ð-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(ßÄÎè8¥Ÿ°„Ð-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(½³žõ8Á½„Ð-
+csquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(Ïÿ€Ð8¥Ÿ°„Ð-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(©ò¬·üÿÿÿÿ8¥Ÿ°„Ð-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(³ÚÀæûÿÿÿÿ8¥Ÿ°„Ð-
+=squid:S1170"!Make this final field static too.(±€¡Ü8¥Ÿ°„Ð-
+esquid:UselessImportCheck"<Remove this unused import 'org.tfoms.snils.model.FindSnils'.(”ÿÐ³8¥Ÿ°„Ð-
+ssquid:UselessImportCheck"ERemove this unused import 'javax.xml.parsers.DocumentBuilderFactory'.(»·±Ñüÿÿÿÿ8¥Ÿ°„Ð-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(àþµ¢úÿÿÿÿ8¥Ÿ°„Ð-
+ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(™…ÚŸÿÿÿÿÿ8¥Ÿ°„Ð-
+Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¥Ÿ°„Ð-
+^squid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(ªº»Úýÿÿÿÿ8Ø§Ã„Ð-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(û‹Ž8¥Ÿ°„Ð-
+tsquid:UselessImportCheck"FRemove this unused import 'org.tfoms.snils.hibernateDB.HibernateUtil'.(èÈôÐþÿÿÿÿ8¥Ÿ°„Ð-
+Hsquid:S1612",Replace this lambda with a method reference.(üåŒõ8¥Ÿ°„Ð-
+Zsquid:UselessImportCheck"1Remove this unused import 'org.w3c.dom.NodeList'.(ÂÈÃ‚8¥Ÿ°„Ð-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(†ŒÉÿ8¥Ÿ°„Ð-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÔØ‹¿øÿÿÿÿ8¥Ÿ°„Ð-
+Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¥Ÿ°„Ð-
+nsquid:S1192"MDefine a constant instead of duplicating this literal "Ð“Ð¾Ñ‚Ð¾Ð²Ð¾" 3 times.(Ö÷î‰úÿÿÿÿ8¥Ÿ°„Ð-
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(»Å¿ùÿÿÿÿ8¥Ÿ°„Ð-
+`squid:UselessImportCheck"2Remove this unused import 'org.hibernate.Session'.(È¹›§ùÿÿÿÿ8¥Ÿ°„Ð-
+lsquid:UselessImportCheck">Remove this unused import 'javax.xml.parsers.DocumentBuilder'.(ƒ”¯¹ùÿÿÿÿ8¥Ÿ°„Ð-

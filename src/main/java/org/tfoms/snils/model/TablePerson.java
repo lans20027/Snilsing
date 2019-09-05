@@ -27,8 +27,8 @@ public class TablePerson {
         this.personBirthday = s.getPersonBirthday();
         this.personSerdoc = s.getPersonSerdoc();
         this.personNumdoc = s.getPersonNumdoc();
-        this.personSerdoc = "-";
-        this.personNumdoc = "-";
+        this.personSerdoc = s.getPersonSerdoc();
+        this.personNumdoc = s.getPersonNumdoc();
     }
 
     public TablePerson(Prizyvnik person,Personadd personadd){

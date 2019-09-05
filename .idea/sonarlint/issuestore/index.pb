@@ -26,8 +26,6 @@ b
 2src/main/java/org/tfoms/snils/model/Personadd.java,7\7\77ad82258be8146ed269cba43cf8b52fe9debe43
 [
 +src/main/resources/META-INF/persistence.xml,3\b\3be4f79b5828b3982f3f6a62bf8fc67b3adedf58
-j
-:src/main/java/org/tfoms/snils/xmls/IsFileExistsThread.java,0\6\061343875b09fa17072484d17a4fc1da9bec27b1
 d
 4src/main/java/org/tfoms/snils/model/TablePerson.java,5\3\532c5ef47530785cbdd15e9c9bfb350875554565
 j
@@ -38,3 +36,9 @@ b
 2src/main/java/org/tfoms/snils/model/Prizyvnik.java,f\4\f4597e926ec55d2e311aca409404ff92093bfe7a
 v
 Fsrc/main/java/org/tfoms/snils/exceptions/ExcelProcessingException.java,8\2\8208c394d4a57868c0205c1256a092c389cbf0bb
+e
+5src/main/java/org/tfoms/snils/model/ui/StatusBar.java,6\4\64770682bd4d702683f590fdcee680d833ea1ff1
+r
+Bsrc/main/java/org/tfoms/snils/fxcontrollers/IsFileExistThread.java,e\d\ed6a43004c0a708eec1df84b7626028cf35bbd23
+B
+setting.properties,5\1\5105245fc928fa1a03d56c44fa76b9b896ea5606

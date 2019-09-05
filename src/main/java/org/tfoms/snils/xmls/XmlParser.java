@@ -298,7 +298,7 @@ public class XmlParser {
             // the output will be pushed to the standard output ...
             // You can use that for debugging
 
-//            transformer.transform(domSource, streamResult);
+            transformer.transform(domSource, streamResult);
             transformer.transform(domSource, streamResult1);
             System.out.println(person.getEnp() + " - create good!");
             return true;
@@ -312,17 +312,16 @@ public class XmlParser {
             if(bornString == null || bornString.length() == 0) return null;
             bornString = bornString.toUpperCase();
 
-            String[] prefTown = {"гор","город","село","с","г.","гор.","г","с.","п.","пос.","р.п.","р-п","пос.г.т.","п.г.т.","д.","дер.","деревня"};
+            String[] prefTown = {"гор","город","село","с","г.","гор.","г","с.","п.","пос.","р.п.","р-п","пос.г.т.","п.г.т.","д.","дер.","деревня","пгт","пгт.","рп"};
             String[] postReg = {"ОБЛАСТЬ","ОБЛ.","ОБЛАСТИ"};
             String[] postReg1 = {"КРАЙ","КРАЯ","КР."};
-            String[] postDist = {"РАЙОН","РАЙОНА","Р-ОН","Р-ОНА","Р-НА"};
+            String[] postDist = {"РАЙОН","РАЙОНА","Р-ОН","Р-ОНА","Р-НА","Р-Н"};
 
             String town = "";
             String region = "";
             int regInd = 0;
 
             String district = "";
-
 
             if(!bornString.trim().contains(" ")){
                 town = bornString.trim().toUpperCase();
@@ -390,6 +389,8 @@ public class XmlParser {
 
             if(district.endsWith("КОГО")){
                 district = district.substring(0,district.length() - 4) + "КИЙ";
+            }else if(district.endsWith("НОГО")){
+                district = district.substring(0, district.length() - 4) + "НЫЙ";
             }
 
             System.out.println("town:" + town);
@@ -423,10 +424,5 @@ public class XmlParser {
             */
 
             return birthPlace;
-    }
-
-
-    public void parseBorn(String born){
-
     }
 }

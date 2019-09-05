@@ -20,6 +20,7 @@ import org.tfoms.snils.dao.SnilsDAO;
 import org.tfoms.snils.hibernateDB.HibernateUtil;
 import org.tfoms.snils.model.FindSnils;
 import org.tfoms.snils.model.TablePerson;
+import org.tfoms.snils.model.ui.StatusBar;
 import org.tfoms.snils.xmls.XmlParser;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
@@ -29,6 +30,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -77,17 +79,18 @@ public class IndexController {
     @FXML
     private TableColumn<TablePerson,String> numdocCol;
 
-
+    private StatusBar statusBar;
 
     private final String statusText = "Здесь будут показываться возможные ошибки";
     private final Tooltip statusTooltip = new Tooltip(statusText);
 
-    private Thread checkFilesExistsThread = new Thread();
+    private IsFileExistThread checkFilesExistsThread;
 
 
     @FXML
     public void initialize(){
-        checkFilesExistsThread.interrupt();
+
+//        System.out.println("initialize() Hello from " + Thread.currentThread().getName());
         enpCol.setCellValueFactory(new PropertyValueFactory<>("enp"));
         snilsCol.setCellValueFactory(new PropertyValueFactory<>("snils"));
         famCol.setCellValueFactory(new PropertyValueFactory<>("personSurname"));
@@ -98,19 +101,6 @@ public class IndexController {
         serdocCol.setCellValueFactory(new PropertyValueFactory<>("personSerdoc"));
         numdocCol.setCellValueFactory(new PropertyValueFactory<>("personNumdoc"));
         System.out.println("init column good");
-
-/*      famColumn.setCellFactory(TextFieldTableCell.forTableColumn());
-        famColumn.setOnEditCommit( (TableColumn.CellEditEvent<FindSnils,String> event) ->{
-            TablePosition<FindSnils, String> pos = event.getTablePosition();
-
-            String newFam = event.getNewValue();
-            if(newFam != null) {
-                int row = pos.getRow();
-                FindSnils person = event.getTableView().getItems().get(row);
-                person.setFam(newFam);
-                updateEntity(person);
-            }
-        });*/
 
         personTableview.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
         ContextMenu contextMenu = getContextMenu();
@@ -130,6 +120,9 @@ public class IndexController {
             contextMenu1.getItems().get(0).setDisable(true);
         }
         statusLabel.setContextMenu(contextMenu1);
+
+        statusBar = new StatusBar(progressBar,statusLabel);
+//        checkFilesExistsThread  = new IsFileExistThread(statusBar,personTableview);
         System.out.println("init good");
     }
 
@@ -139,19 +132,13 @@ public class IndexController {
     }
 
 
-    void updateEntity(FindSnils person){
-        try(Session session = HibernateUtil.getSessionFactory().openSession()){
-            session.getTransaction().begin();
-
-            session.update(person);
-
-            session.getTransaction().commit();
-        }catch(Exception e){
-
-        }
+    @FXML
+    public void sendQueryNew(){
+        checkFilesExistsThread = new IsFileExistThread(statusBar,personTableview);
+        checkFilesExistsThread.start();
     }
 
-
+/*
     @FXML
     public void sendQuery(){
         statusLabel.setTooltip(statusTooltip);
@@ -218,7 +205,7 @@ public class IndexController {
                                     String fileEnp = checkEnpsInsideFile(oiFile,enps,enpsGood);
                                     if(!fileEnp.equals("")){
                                         System.out.println("DELETING:" + file.toString());
-                                        Files.delete(file);
+//                                        Files.delete(file);
                                     }
                                 }
                             }
@@ -235,7 +222,7 @@ public class IndexController {
                 long period = 2000L;
 
                 executorService.scheduleAtFixedRate(fileTask,delay,period, TimeUnit.MILLISECONDS);
-                Thread.sleep(1800000);
+                Thread.sleep(180_000);
                 executorService.shutdown();
                 Platform.runLater(()->{
                     statusLabel.setText("Ответов получено:" + enpsGood.size() + "/" + all);
@@ -253,33 +240,8 @@ public class IndexController {
         isFilesExistsThread.start();
         this.checkFilesExistsThread = isFilesExistsThread;
     }
+*/
 
-
-    private String checkEnpsInsideFile(File file,ArrayList<String> enps,ArrayList<String> enpGood) throws Exception{
-        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        DocumentBuilder builder = factory.newDocumentBuilder();
-        Document document = builder.parse(file);//в переменной документ лежит результат парсинга
-
-        NodeList clientsId = document.getElementsByTagName("clientId");
-        String clientId = clientsId.item(0).getTextContent();
-        for(String enp : enps){
-            if(clientId.startsWith(enp)){
-                enpGood.add(enp);
-                enps.remove(enp);
-                String snils = "";
-                NodeList snilsNode = document.getElementsByTagName("ns2:Snils");
-                if(snilsNode.getLength() == 1){
-                    snils = snilsNode.item(0).getTextContent();
-                } else {
-                    snils = "нет данных";
-                }
-                updateTableRow(enp,snils);
-                System.out.println("found enp-" + enp);
-                return enp;
-            }
-        }
-        return "";
-    }
 
 
     @FXML
@@ -317,10 +279,14 @@ public class IndexController {
         findSnilsGoodThread.start();
     }
 
+
+    public void updateBar(String s1, String s2, double p){
+        statusBar.update(s1,s2,p);
+    }
+
     @FXML
     public void importExcel(){
-        statusLabel.setTooltip(statusTooltip);
-
+        statusBar.reset();
         final FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Импорт данных");
         File file = fileChooser.showOpenDialog(parent.getScene().getWindow());
@@ -333,6 +299,7 @@ public class IndexController {
                 progressBar.setProgress(-1);
                 statusLabel.setText("Считывание из экселя");
             });
+
 
             try (XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(file))) {
                 XSSFSheet sheet = workbook.getSheetAt(0);
@@ -349,30 +316,24 @@ public class IndexController {
                     System.out.println("prizyw");
                     for (int i = 1; i < rows; i++) {
                         Row row = sheet.getRow(i);
+                        if(row.getCell(0).getStringCellValue() == null || row.getCell(0).getStringCellValue().length() == 0) break;
                         try {
                             String surname = row.getCell(0).getStringCellValue();
-                            System.out.println("surname + " + surname);
                             String firstname = row.getCell(1).getStringCellValue();
-                            System.out.println("first:" + firstname);
                             String lastname = row.getCell(2).getStringCellValue();
-                            System.out.println("last:" + lastname);
                             Date birthday = row.getCell(3).getDateCellValue();
-                            System.out.println("dat:" + birthday);
                             Cell serCell = row.getCell(4);
                             serCell.setCellType(CellType.STRING);
                             String ser = serCell.getStringCellValue();
-                            System.out.println("ser" + ser);
                             Cell numCell = row.getCell(5);
                             numCell.setCellType(CellType.STRING);
                             String num  = numCell.getStringCellValue();
-                            System.out.println("num + " + num);
                             data.add(SnilsDAO.findPerson(surname.trim().toUpperCase(),firstname.trim().toUpperCase(),lastname.trim().toUpperCase(),birthday,ser.trim(),num.trim()));
                         } catch (Exception ex) {
                             throw new Exception("Строка " + i + "Ошибка:" + ex.toString());
                         }
                     }
                 }else {
-                    System.out.println("simple");
                     for (int i = 0; i < rows; i++) {
                         Row row = sheet.getRow(i);
                         try {
@@ -396,7 +357,9 @@ public class IndexController {
                     personTableview.refresh();
                 }
 
+
                 Platform.runLater(() -> {
+//                    statusBar.update("Готово","Ошибок нет",0);
                     progressBar.setProgress(0);
                     statusLabel.setText("Готово");
                     menuExport.setDisable(false);
@@ -501,10 +464,17 @@ public class IndexController {
         return contextMenu;
     }
 
+
+    @FXML
+    private void info(){
+
+        System.out.println("filethread exists?-" + checkFilesExistsThread.isAlive() + "\n" + " is daemon?" + checkFilesExistsThread.isDaemon());
+    }
+
     private ContextMenu getContextMenuForStatusLabel(){
         ContextMenu contextMenu = new ContextMenu();
         MenuItem item1 = new MenuItem("Перестать ожидать");
-        item1.setOnAction(event -> {checkFilesExistsThread.interrupt(); statusLabel.setText("Ожидание прекращено");});
+        item1.setOnAction(event -> {checkFilesExistsThread.interrupt(); statusLabel.setText("Готово");});
         contextMenu.getItems().add(item1);
         return contextMenu;
     }
@@ -513,23 +483,6 @@ public class IndexController {
         return personTableview.getSelectionModel().getSelectedItems().size() > 0;
     }
 
-    private void updateTableRow(String enp, String snils){
-        synchronized (personTableview){
-            ObservableList<TablePerson> data = personTableview.getItems();
-            System.out.println("before set:" + data.get(0));
-            for(TablePerson p : data){
-                if(p.getEnp().equals(enp)){
-                    p.setSnils(snils);
-                    System.out.println("enp:" + enp + " snils:" + snils);
-                    SnilsDAO.insertPerson(p);
-                    break;
-                }
-            }
-//            System.out.println("after set:" + data.get(0));
-            personTableview.setItems(data);
-            personTableview.refresh();
-//            System.out.println("updateTableRow good");
-        }
-    }
+
 
 }
