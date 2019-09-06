@@ -1,0 +1,19 @@
+
+Bsquid:S1170"!Make this final field static too.(ˆÆÅÅûÿÿÿÿ8¦†§¦Ğ-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(‰˜†•8‹Ñ‘¥Ğ-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(©şêÜúÿÿÿÿ8 ‰è¥Ğ-
+Bsquid:S1170"!Make this final field static too.(æëâ¯ùÿÿÿÿ8«Ü ¦Ğ-
+Rsquid:UselessImportCheck")Remove this unused import 'java.io.File'.(†Ğ¥Å8¤ñƒ¦Ğ-
+Bsquid:S1170"!Make this final field static too.( ßªÇÿÿÿÿÿ8¦†§¦Ğ-
+isquid:UselessImportCheck";Remove this unused import 'javafx.scene.layout.BorderPane'.(Îî¥üÿÿÿÿ8¼»ù¥Ğ-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(ºŠ–šıÿÿÿÿ8«÷Û¥Ğ-
+<squid:S1170"!Make this final field static too.(Şÿ×@8¦†§¦Ğ-
+`squid:UselessImportCheck"7Remove this unused import 'java.io.OutputStreamWriter'.(Ÿ“¸8â¸Î¥Ğ-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(¿è®Î8¬®Ÿ¥Ğ-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(şïÌ½8÷«€¦Ğ-
+Bsquid:S1170"!Make this final field static too.(³ƒèşÿÿÿÿ8¦†§¦Ğ-

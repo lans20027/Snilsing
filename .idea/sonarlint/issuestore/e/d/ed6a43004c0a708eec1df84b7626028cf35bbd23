@@ -1,31 +1,27 @@
 
-Bsquid:S1170"!Make this final field static too.(õ–Îğùÿÿÿÿ8¤ìøŞÏ-
-Ysquid:UselessImportCheck"0Remove this unused import 'java.util.TimerTask'.(àÀÇÙ8åê‰ƒĞ-
-hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(ÀÏøĞşÿÿÿÿ8¬úùÏ-
-Hsquid:S1602",Remove useless curly braces around statement(ÃÉş©8ÿõ€ƒĞ-
 T
-squid:S106"9Replace this use of System.out or System.err by a logger.(óĞ…°8 ”ıŞÏ-
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(óĞ…°8ÿõ€ƒĞ-
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÂÍ“Ã8˜òÛ§Ğ-
 Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(×ÓÔ¹ıÿÿÿÿ8­ÀÄƒĞ-
-ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ÀÏøĞşÿÿÿÿ8’šø‚Ğ-
-fsquid:UselessImportCheck"=Remove this unused import 'javafx.scene.control.ProgressBar'.(Ò¤™ï8ò¸›İÏ-
-gsquid:UselessImportCheck"9Remove this unused import 'javafx.scene.control.Tooltip'.(ô˜½Æûÿÿÿÿ8®ŸƒŞÏ-
+squid:S106"9Replace this use of System.out or System.err by a logger.(×ÓÔ¹ıÿÿÿÿ8˜òÛ§Ğ-
+Hsquid:S1602",Remove useless curly braces around statement(ÃÉş©8˜òÛ§Ğ-
+Hsquid:S1602",Remove useless curly braces around statement(ÃÉş©8˜òÛ§Ğ-
+Hsquid:S1602",Remove useless curly braces around statement(ÃÉş©8˜òÛ§Ğ-
+hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(ÀÏøĞşÿÿÿÿ8˜òÛ§Ğ-
+bsquid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8˜òÛ§Ğ-
+esquid:UselessImportCheck"7Remove this unused import 'javafx.scene.control.Label'.(ö²­ÿÿÿÿÿ8”Âë¤Ğ-
+Hsquid:S1602",Remove useless curly braces around statement(ÃÉş©8˜òÛ§Ğ-
+nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(Ó¡ò8˜òÛ§Ğ-
+Hsquid:S1602",Remove useless curly braces around statement(ÃÉş©8˜òÛ§Ğ-
 Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(à±úÜÿÿÿÿÿ8¬úùÏ-
-bsquid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8üûƒĞ-
-esquid:UselessImportCheck"7Remove this unused import 'javafx.scene.control.Label'.(ö²­ÿÿÿÿÿ8»É İÏ-
-Hsquid:S1602",Remove useless curly braces around statement(ÃÉş©8 ”ıŞÏ-
+squid:S106"9Replace this use of System.out or System.err by a logger.(à±úÜÿÿÿÿÿ8˜òÛ§Ğ-
+Hsquid:S1602",Remove useless curly braces around statement(ÃÉş©8˜òÛ§Ğ-
+fsquid:UselessImportCheck"=Remove this unused import 'javafx.scene.control.ProgressBar'.(Ò¤™ï8”Âë¤Ğ-
 S
-squid:S106"9Replace this use of System.out or System.err by a logger.(·€÷8­ÀÄƒĞ-
-Hsquid:S1602",Remove useless curly braces around statement(ÃÉş©8¬úùÏ-
-nsquid:S1192"MDefine a constant instead of duplicating this literal "ĞÑˆĞ¸Ğ±ĞºĞ°" 3 times.(‹·˜˜şÿÿÿÿ8Ã™¢ŞÏ-
-Hsquid:S1602",Remove useless curly braces around statement(ÃÉş©8´¡èƒĞ-
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(«Ú½ñùÿÿÿÿ8 ”ıŞÏ-
-Bsquid:S1170"!Make this final field static too.(ğ¥Ÿıÿÿÿÿ8…ºûŞÏ-
+squid:S106"9Replace this use of System.out or System.err by a logger.(·€÷8˜òÛ§Ğ-
+gsquid:UselessImportCheck"9Remove this unused import 'javafx.scene.control.Tooltip'.(ô˜½Æûÿÿÿÿ8”Âë¤Ğ-
+ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ÀÏøĞşÿÿÿÿ8˜òÛ§Ğ-
+nsquid:S1192"MDefine a constant instead of duplicating this literal "ĞÑˆĞ¸Ğ±ĞºĞ°" 3 times.(‹·˜˜şÿÿÿÿ8˜òÛ§Ğ-
 T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÂÍ“Ã8¬úùÏ-
-nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Ó¡ò8ÿõ€ƒĞ-
-Hsquid:S1602",Remove useless curly braces around statement(ÃÉş©8óÓ·‚Ğ-
-Hsquid:S1602",Remove useless curly braces around statement(ÃÉş©8ìÛœİÏ-
+squid:S106"9Replace this use of System.out or System.err by a logger.(óĞ…°8˜òÛ§Ğ-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(óĞ…°8˜òÛ§Ğ-

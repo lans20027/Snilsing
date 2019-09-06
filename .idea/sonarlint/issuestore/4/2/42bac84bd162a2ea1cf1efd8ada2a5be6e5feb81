@@ -1,40 +1,37 @@
 
+Psquid:S1066"/Merge this if statement with the enclosing one.(Íõþ‹ýÿÿÿÿ8˜Êä§Ð-
+¤%squid:RedundantThrowsDeclarationCheck"iRemove the declaration of thrown exception 'java.lang.NullPointerException' which is a runtime exception.(À—•¹ýÿÿÿÿ8˜Êä§Ð-
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(áçÛ²þÿÿÿÿ8˜Êä§Ð-
 T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ˆ›ŠÖ8÷Š¬µÏ-
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Å¹„8»Ü¢ŽÎ-
-asquid:S2147"ECombine this catch with the one at line 170, which has the same body.(ÿÍÐ‰8»Ü¢ŽÎ-
-Ysquid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8‡¹ó³Ï-
-nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 67 to the 15 allowed.(¾ùÏÜ8œ´Î³Ï-
-[squid:UselessImportCheck"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8Î£ó³Ï-
+squid:S106"9Replace this use of System.out or System.err by a logger.(ç¢×ë8˜Êä§Ð-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¢Ç©©8˜Êä§Ð-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(–˜ŒÅ8˜Êä§Ð-
 Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(±”™ þÿÿÿÿ8õÁ«ÓÏ-
-vsquid:S4435"ZSecure this "Transformer" by either disabling external DTDs or enabling secure processing.(Ý‰Ë–8»Ü¢ŽÎ-
-Vsquid:UselessImportCheck"-Remove this unused import 'org.w3c.dom.Attr'.(öÇ£Ð8»Ü¢ŽÎ-
-€squid:UselessImportCheck"RRemove this unused import 'javax.xml.transform.TransformerConfigurationException'.(Î¯«¶ûÿÿÿÿ8»Ü¢ŽÎ-
+squid:S106"9Replace this use of System.out or System.err by a logger.(² ß·ýÿÿÿÿ8˜Êä§Ð-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¡ÎÄ8˜Êä§Ð-
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(É¥ßõýÿÿÿÿ8˜Êä§Ð-
+€squid:UselessImportCheck"RRemove this unused import 'javax.xml.transform.TransformerConfigurationException'.(Î¯«¶ûÿÿÿÿ8Ã½×¤Ð-
+nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 67 to the 15 allowed.(¾ùÏÜ8˜Êä§Ð-
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(º»çåøÿÿÿÿ8˜Êä§Ð-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¡ÎÄ8˜Êä§Ð-
+vsquid:S4435"ZSecure this "Transformer" by either disabling external DTDs or enabling secure processing.(Ý‰Ë–8˜Êä§Ð-
+vsquid:S4435"ZSecure this "Transformer" by either disabling external DTDs or enabling secure processing.(Ý‰Ë–8˜Êä§Ð-
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Î¯Æïùÿÿÿÿ8×êæ§Ð-
 Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ç¨–¢øÿÿÿÿ8»Ü¢ŽÎ-
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(É¥ßõýÿÿÿÿ8»Ü¢ŽÎ-
-Psquid:S1066"/Merge this if statement with the enclosing one.(Íõþ‹ýÿÿÿÿ8‚óœÑÏ-
+squid:S106"9Replace this use of System.out or System.err by a logger.(±”™ þÿÿÿÿ8¥Ì×¤Ð-
+asquid:S2147"ECombine this catch with the one at line 175, which has the same body.(ÿÍÐ‰8˜Êä§Ð-
 T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ç¢×ë8ê‰ì²Ï-
-Ysquid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8‡¹ó³Ï-
-vsquid:S4435"ZSecure this "Transformer" by either disabling external DTDs or enabling secure processing.(Ý‰Ë–8»Ü¢ŽÎ-
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¢Ç©©8»Ü¢ŽÎ-
+squid:S106"9Replace this use of System.out or System.err by a logger.(‰ëÞˆ8˜Êä§Ð-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¬¼‹ó8˜Êä§Ð-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(  Ý°8×êæ§Ð-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(“Àïú8˜Êä§Ð-
 Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(² ß·ýÿÿÿÿ8èäÒÏ-
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(º»çåøÿÿÿÿ8»Ü¢ŽÎ-
-8squid:S1643"Use a StringBuilder instead.(½ýÈö8‚óœÑÏ-
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(áçÛ²þÿÿÿÿ8»Ü¢ŽÎ-
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(Þ˜ô­ÿÿÿÿÿ8ÎíªÓÏ-
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(–˜ŒÅ8»Ü¢ŽÎ-
-¤%squid:RedundantThrowsDeclarationCheck"iRemove the declaration of thrown exception 'java.lang.NullPointerException' which is a runtime exception.(À—•¹ýÿÿÿÿ8»Ü¢ŽÎ-
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¡ÎÄ8»Ü¢ŽÎ-
-bsquid:UselessImportCheck"9Remove this unused import 'org.tfoms.snils.model.Person'.(æüÀ“8À‘ßÐÏ-
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(îº‡8»Ü¢ŽÎ-
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¬¼‹ó8»Ü¢ŽÎ-
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ç¨–¢øÿÿÿÿ8˜Êä§Ð-
 T
-squid:S106"9Replace this use of System.out or System.err by a logger.(‰ëÞˆ8»Ü¢ŽÎ-
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(“Àïú8Ãö¦ÒÏ-
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.( ½–§8»Ü¢ŽÎ-
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¡ÎÄ8»Ü¢ŽÎ-
+squid:S106"9Replace this use of System.out or System.err by a logger.(ˆ›ŠÖ8˜Êä§Ð-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(îº‡8¥Ì×¤Ð-
+8squid:S1643"Use a StringBuilder instead.(½ýÈö8˜Êä§Ð-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Å¹„8˜Êä§Ð-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.( ½–§8˜Êä§Ð-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(Þ˜ô­ÿÿÿÿÿ8˜Êä§Ð-

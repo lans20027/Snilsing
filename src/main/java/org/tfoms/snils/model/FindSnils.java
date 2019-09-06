@@ -3,7 +3,6 @@ package org.tfoms.snils.model;
 
 import org.hibernate.annotations.NotFound;
 
-import javax.inject.Named;
 import javax.persistence.*;
 import java.util.Date;
 

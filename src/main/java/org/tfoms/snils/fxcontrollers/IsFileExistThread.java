@@ -8,6 +8,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.Tooltip;
 import org.tfoms.snils.dao.SnilsDAO;
 import org.tfoms.snils.model.TablePerson;
+import org.tfoms.snils.model.ui.Settings;
 import org.tfoms.snils.model.ui.StatusBar;
 import org.tfoms.snils.xmls.XmlParser;
 import org.w3c.dom.Document;
@@ -22,7 +23,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.TimerTask;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -33,8 +33,11 @@ public class IsFileExistThread extends Thread{
     final ArrayList<String> enps;
     final ArrayList<String> enpsGood;
     final TableView<TablePerson> tableView;
-    final String directorySnils = "\\\\Srv-term03\\542202_3s\\in\\snils";
-    final String directoryError = "\\\\Srv-term03\\542202_3s\\in\\error";
+    private Settings settings;
+    private String directorySnils;
+    private String directoryError;
+    private Long timeWait;
+    private boolean saveResponse;
 
 
     public IsFileExistThread(StatusBar s, TableView<TablePerson> tableView){
@@ -42,6 +45,11 @@ public class IsFileExistThread extends Thread{
         enpsGood = new ArrayList<>();
         enps = new ArrayList<>();
         this.tableView = tableView;
+        settings = new Settings();
+        directoryError = settings.getErrorFolder();
+        directorySnils = settings.getResponseFolder();
+        timeWait = Long.valueOf(settings.getTimeWait());
+        saveResponse = settings.isSaveResponse();
     }
 
 
@@ -78,7 +86,7 @@ public class IsFileExistThread extends Thread{
                     String fileEnp = checkEnpsInsideFile(oiFile,enps,enpsGood);
                     if(!fileEnp.equals("")){
                         System.out.println("DELETING:" + file.toString());
-//                                        Files.delete(file);
+                        if(!saveResponse) Files.delete(file);
                     }
                 }
             }
@@ -97,6 +105,7 @@ public class IsFileExistThread extends Thread{
                     String fileEnp = checkEnpsInsideFile(oiFile1,enps,enpsGood);
                     if(!fileEnp.equals("")){
                         System.out.println("DELETING:" + file.toString());
+//                        if(!saveResponse) Files.delete(file);
                     }
                 }
             }
@@ -193,7 +202,7 @@ public class IsFileExistThread extends Thread{
             //запускаем задачу , которая ищет ответы со снилсами, либо ошибки
             executorService.scheduleWithFixedDelay(fileTask,delay,period,TimeUnit.MILLISECONDS);
             System.out.println("sleeep");
-            Thread.sleep(30_000);
+            Thread.sleep(timeWait * 1000);
             System.out.println("interrupting");
             executorService.shutdownNow();
             executorService.awaitTermination(10,TimeUnit.SECONDS);

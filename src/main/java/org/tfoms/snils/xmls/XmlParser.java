@@ -3,10 +3,7 @@ package org.tfoms.snils.xmls;
 import org.tfoms.snils.model.FindSnils;
 import java.io.File;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -17,14 +14,22 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
-import org.tfoms.snils.model.Person;
+
 import org.tfoms.snils.model.Personadd;
 import org.tfoms.snils.model.TablePerson;
-import org.w3c.dom.Attr;
+import org.tfoms.snils.model.ui.Settings;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 public class XmlParser {
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+    private Settings settings;
+    private String directoryRequest;
+
+
+    public XmlParser(){
+        settings = new Settings();
+        directoryRequest = settings.getRequestFolder();
+    }
 
     public boolean createDocument(FindSnils person){
         try {
@@ -290,16 +295,16 @@ public class XmlParser {
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
             DOMSource domSource = new DOMSource(document);
-            StreamResult streamResult1 = new StreamResult(new File("documents/" + person.getEnp() + ".xml"));
-            StreamResult streamResult = new StreamResult(new File("\\\\Srv-term03\\542202_3s\\out\\" + person.getEnp() + ".xml"));
-
+//            StreamResult streamResult1 = new StreamResult(new File("documents/" + person.getEnp() + ".xml"));
+            StreamResult streamResult = new StreamResult(new File( directoryRequest + person.getEnp() + ".xml"));
+            //"\\\\Srv-term03\\542202_3s\\out\\"
             // If you use
             // StreamResult result = new StreamResult(System.out);
             // the output will be pushed to the standard output ...
             // You can use that for debugging
 
             transformer.transform(domSource, streamResult);
-            transformer.transform(domSource, streamResult1);
+//            transformer.transform(domSource, streamResult1);
             System.out.println(person.getEnp() + " - create good!");
             return true;
     }

@@ -1,4 +1,3 @@
 
-]squid:S1710"<Remove the 'NamedQueries' wrapper from this annotation group(¨‘¯¼ûÿÿÿÿ8·æ…¼Í-
 hsquid:UselessImportCheck"?Remove this unused import 'org.hibernate.annotations.NotFound'.(™¯äÙ8Ô¦Ì»Í-
-Xsquid:UselessImportCheck"/Remove this unused import 'javax.inject.Named'.(»ßáŸ8·æ…¼Í-
+]squid:S1710"<Remove the 'NamedQueries' wrapper from this annotation group(¨‘¯¼ûÿÿÿÿ8·æ…¼Í-

@@ -1,16 +1,16 @@
 
-bsquid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8°•ıÏ-
-osquid:UselessImportCheck"ARemove this unused import 'javax.persistence.PersistenceContext'.(ê°İÒıÿÿÿÿ8Õ²ùƒÎ-
-Msquid:S1602",Remove useless curly braces around statement(‹æÀ±øÿÿÿÿ8Âü†ıÏ-
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(²ÿì’8°•ıÏ-
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(æÙ©Ş8‡¶¥ıÏ-
-§%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÙØ¤Şıÿÿÿÿ8±÷Ó‚Ğ-
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(´£ç‚øÿÿÿÿ8ıÊä‡Ğ-
 Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(âª§‹şÿÿÿÿ8Âü†ıÏ-
+squid:S106"9Replace this use of System.out or System.err by a logger.(âª§‹şÿÿÿÿ8ıÊä‡Ğ-
 Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(×Ø‰Öùÿÿÿÿ8ÍÑŒıÏ-
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ë§ç¶ûÿÿÿÿ8öªÇ‚Ğ-
+squid:S106"9Replace this use of System.out or System.err by a logger.(×Ø‰Öùÿÿÿÿ8ıÊä‡Ğ-
+Msquid:S1602",Remove useless curly braces around statement(‹æÀ±øÿÿÿÿ8ıÊä‡Ğ-
+bsquid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ıÊä‡Ğ-
+§%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÙØ¤Şıÿÿÿÿ8ıÊä‡Ğ-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(²ÿì’8ıÊä‡Ğ-
+osquid:UselessImportCheck"ARemove this unused import 'javax.persistence.PersistenceContext'.(ê°İÒıÿÿÿÿ8ıÊä‡Ğ-
 T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ó¢ĞÑ8‘àÊ‚Ğ-
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(´£ç‚øÿÿÿÿ8¶ëıÏ-
-Fsquid:S1068"*Remove this unused "toStop" private field.(®ÜÏû8ïÑ‚ıÏ-
+squid:S106"9Replace this use of System.out or System.err by a logger.(ó¢ĞÑ8ıÊä‡Ğ-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(æÙ©Ş8ıÊä‡Ğ-
+Fsquid:S1068"*Remove this unused "toStop" private field.(®ÜÏû8ıÊä‡Ğ-
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ë§ç¶ûÿÿÿÿ8ıÊä‡Ğ-

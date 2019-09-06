@@ -43,7 +43,7 @@ public class SnilsDAO {
 
 
     public static void insertPerson(TablePerson person){
-        if(person.getSnils().trim().equals("нет данных") || person.getSnils().trim().equals("-")) return;
+        if(person.getSnils().trim().equals("нет данных") || person.getSnils().trim().equals("-") || person.getSnils().trim().equals("ошибка")) return;
         SnilsSaveResponse snilsPerson = new SnilsSaveResponse(person);
         snilsPerson.setDateInsert(new Date());
         System.out.println("ssaving:" + snilsPerson);

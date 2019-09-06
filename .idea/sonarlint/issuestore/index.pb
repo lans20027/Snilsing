@@ -40,5 +40,9 @@ e
 5src/main/java/org/tfoms/snils/model/ui/StatusBar.java,6\4\64770682bd4d702683f590fdcee680d833ea1ff1
 r
 Bsrc/main/java/org/tfoms/snils/fxcontrollers/IsFileExistThread.java,e\d\ed6a43004c0a708eec1df84b7626028cf35bbd23
-B
-setting.properties,5\1\5105245fc928fa1a03d56c44fa76b9b896ea5606
+<
+Snilsing.iml,2\0\20a03841ce29c2399e21c19736c05717407865c0
+d
+4src/main/java/org/tfoms/snils/model/ui/Settings.java,4\2\4296be04eb292941e8b4e8ad399136be6c108610
+y
+Isrc/main/java/org/tfoms/snils/fxcontrollers/SettingsDialogController.java,3\5\35570ccea9fd3bd0527756d78b6161c588e0fc83

@@ -5,6 +5,9 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.Event;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.BorderPane;
@@ -138,110 +141,27 @@ public class IndexController {
         checkFilesExistsThread.start();
     }
 
-/*
+
     @FXML
-    public void sendQuery(){
-        statusLabel.setTooltip(statusTooltip);
-        statusLabel.setText("Посылаю запрос");
-        progressBar.setProgress(-1);
-        ObservableList<TablePerson> dataCust = personTableview.getItems();
-        ArrayList<String> enps = new ArrayList<>(dataCust.size());
-        ArrayList<String> enpsGood = new ArrayList<>(dataCust.size());
+    public void openSettings(){
+        FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("fxml/settings.fxml"));
+        try {
+            Parent parent = loader.load();
+            SettingsDialogController controller = loader.<SettingsDialogController>getController();
 
+            Scene scene = new Scene(parent, 400, 300);
+            Stage stage = new Stage();
+            stage.setResizable(false);
+            stage.setTitle("Настройки");
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.setScene(scene);
 
+            stage.showAndWait();
+        } catch (IOException e) {
+            statusBar.update("Ошибка при открытии настроек",e.getMessage(),0);
+        }
 
-        Thread thread = new Thread(() -> {
-            XmlParser parser = new XmlParser();
-            int i = 0;
-            for(TablePerson person : dataCust){
-                try {
-                   if(parser.createDocument(person)){
-                        enps.add(person.getEnp());
-                   }
-                   i++;
-                } catch (Exception e){
-                    System.out.println("bad: " + person);
-                    Platform.runLater(() -> {
-                        statusLabel.setTooltip(new Tooltip("Ошибка при создании документа для:" + person.getEnp() + "\nОписание ошибки" + e.toString()));
-                        statusLabel.setText("Ошибка при создании документа");
-                        progressBar.setProgress(0);
-                    });
-                    return;
-                }
-            }
-        });
-
-
-        final String directorySnils = "\\\\Srv-term03\\542202_3s\\in\\snils";
-        final String directoryError = "\\\\Srv-term03\\542202_3s\\in\\error";
-
-        Thread isFilesExistsThread = new Thread(() -> {
-            ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
-
-            try {
-                thread.join();
-                int all = enps.size();
-
-                TimerTask fileTask = new TimerTask() {
-                    @Override
-                    public void run() {
-                        if (enps.isEmpty()){
-                            Platform.runLater(()->{
-                                statusLabel.setText("Получено ответов:" + enpsGood.size() + "/" + all);
-                                progressBar.setProgress(0);
-                            });
-                            executorService.shutdownNow();
-                        }
-                        Platform.runLater(() -> {
-                            statusLabel.setText( "Ожидание ответа " + enpsGood.size() + "/" + all);
-                        });
-
-                        File oiFile;
-                        Path pathSnils = Paths.get(directorySnils);
-                        try(DirectoryStream<Path> stream = Files.newDirectoryStream(pathSnils)) {
-                            for (Path file : stream) {
-                                oiFile = file.toFile();
-                                if (oiFile.isFile() && oiFile.canRead()) {
-                                    String fileEnp = checkEnpsInsideFile(oiFile,enps,enpsGood);
-                                    if(!fileEnp.equals("")){
-                                        System.out.println("DELETING:" + file.toString());
-//                                        Files.delete(file);
-                                    }
-                                }
-                            }
-                        }catch (Exception e){
-                            Platform.runLater(() -> {
-                                statusLabel.setText("Ошибка во время сканирования ответов");
-                                progressBar.setProgress(0);
-                                statusLabel.setTooltip(new Tooltip(e.toString()));
-                            });
-                        }
-                    }
-                };
-                long delay = 5000L;
-                long period = 2000L;
-
-                executorService.scheduleAtFixedRate(fileTask,delay,period, TimeUnit.MILLISECONDS);
-                Thread.sleep(180_000);
-                executorService.shutdown();
-                Platform.runLater(()->{
-                    statusLabel.setText("Ответов получено:" + enpsGood.size() + "/" + all);
-                    progressBar.setProgress(0);
-                });
-            } catch (InterruptedException e){
-                Platform.runLater(()->{
-                    statusLabel.setText("Ошибка во время ожидания ответа.");
-                    progressBar.setProgress(0);
-                    statusLabel.setTooltip(new Tooltip(e.toString()));
-                });
-            }
-        });
-        thread.start();
-        isFilesExistsThread.start();
-        this.checkFilesExistsThread = isFilesExistsThread;
     }
-*/
-
 
 
     @FXML
@@ -277,11 +197,6 @@ public class IndexController {
         statusLabel.setText("Поиск людей в базе");
         progressBar.setProgress(-1);
         findSnilsGoodThread.start();
-    }
-
-
-    public void updateBar(String s1, String s2, double p){
-        statusBar.update(s1,s2,p);
     }
 
     @FXML
@@ -464,12 +379,6 @@ public class IndexController {
         return contextMenu;
     }
 
-
-    @FXML
-    private void info(){
-
-        System.out.println("filethread exists?-" + checkFilesExistsThread.isAlive() + "\n" + " is daemon?" + checkFilesExistsThread.isDaemon());
-    }
 
     private ContextMenu getContextMenuForStatusLabel(){
         ContextMenu contextMenu = new ContextMenu();

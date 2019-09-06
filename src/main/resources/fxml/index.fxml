@@ -23,7 +23,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.tfoms.snils.fxcontrollers.IndexController">
+<BorderPane fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="952.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.tfoms.snils.fxcontrollers.IndexController">
    <center>
       <AnchorPane prefHeight="300.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -54,20 +54,30 @@
                   </AnchorPane>
                   <AnchorPane minWidth="200.0" prefHeight="473.0" prefWidth="378.0">
                      <children>
-                        <VBox layoutX="64.0" layoutY="84.0" onMouseClicked="#removeSelection" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: ghostwhite;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <VBox layoutX="64.0" layoutY="84.0" onMouseClicked="#removeSelection" prefHeight="455.0" prefWidth="206.0" style="-fx-background-color: ghostwhite;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
-                              <Button mnemonicParsing="false" onAction="#findSnilsGood" prefHeight="19.0" prefWidth="254.0" style="-fx-background-color: ghostwhite;" text="Готовые снилсы" textAlignment="CENTER">
+                              <Label text="Найти снилсы" textFill="#544631">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" left="20.0" top="5.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Arial Black" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Button mnemonicParsing="false" onAction="#findSnilsGood" prefHeight="19.0" prefWidth="150.0" text="Готовые снилсы" textAlignment="CENTER">
                                  <font>
                                     <Font name="Tahoma" size="14.0" />
-                                 </font></Button>
-                              <Button fx:id="sendButton" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#sendQueryNew" prefHeight="25.0" prefWidth="260.0" style="-fx-background-color: ghostwhite;" text="Послать запрос" textOverrun="CLIP">
+                                 </font>
                                  <VBox.margin>
-                                    <Insets top="50.0" />
+                                    <Insets left="10.0" />
+                                 </VBox.margin></Button>
+                              <Button fx:id="sendButton" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#sendQueryNew" prefHeight="25.0" prefWidth="150.0" text="Послать запрос" textOverrun="CLIP">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="200.0" />
                                  </VBox.margin>
                                  <font>
                                     <Font name="Bell MT Italic" size="14.0" />
                                  </font></Button>
-                              <Button mnemonicParsing="false" onAction="#info" text="Button" />
                            </children>
                         </VBox>
                      </children></AnchorPane>
@@ -85,7 +95,7 @@
                      <items>
                         <MenuItem fx:id="menuImport" mnemonicParsing="false" onAction="#importExcel" text="Импорт данных" />
                         <MenuItem fx:id="menuExport" mnemonicParsing="false" onAction="#exportExcel" text="Экпорт в эксель" />
-                        <MenuItem mnemonicParsing="false" text="Настройки" />
+                        <MenuItem mnemonicParsing="false" onAction="#openSettings" text="Настройки" />
                      </items>
                   </Menu>
                </menus>
