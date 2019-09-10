@@ -29,6 +29,7 @@ public class TablePerson {
         this.personNumdoc = s.getPersonNumdoc();
         this.personSerdoc = s.getPersonSerdoc();
         this.personNumdoc = s.getPersonNumdoc();
+        this.sex = s.getSex();
     }
 
     public TablePerson(Prizyvnik person,Personadd personadd){

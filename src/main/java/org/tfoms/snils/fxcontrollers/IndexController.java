@@ -17,31 +17,16 @@ import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.hibernate.Session;
 import org.tfoms.snils.dao.FindSnilsDAO;
 import org.tfoms.snils.dao.SnilsDAO;
-import org.tfoms.snils.hibernateDB.HibernateUtil;
-import org.tfoms.snils.model.FindSnils;
 import org.tfoms.snils.model.TablePerson;
 import org.tfoms.snils.model.ui.StatusBar;
-import org.tfoms.snils.xmls.XmlParser;
-import org.w3c.dom.Document;
-import org.w3c.dom.NodeList;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.file.DirectoryStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.*;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
 
 public class IndexController {
     private final ObservableList<TablePerson> personData = FXCollections.observableArrayList();
@@ -92,8 +77,6 @@ public class IndexController {
 
     @FXML
     public void initialize(){
-
-//        System.out.println("initialize() Hello from " + Thread.currentThread().getName());
         enpCol.setCellValueFactory(new PropertyValueFactory<>("enp"));
         snilsCol.setCellValueFactory(new PropertyValueFactory<>("snils"));
         famCol.setCellValueFactory(new PropertyValueFactory<>("personSurname"));
@@ -107,25 +90,19 @@ public class IndexController {
 
         personTableview.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
         ContextMenu contextMenu = getContextMenu();
-        contextMenu.setOnShowing(event -> contextMenu.getItems().get(0).setDisable(!isRowsSelected()));
+        contextMenu.setOnShowing(event -> {
+                    contextMenu.getItems().get(0).setDisable(!isRowsSelected());
+                    contextMenu.getItems().get(1).setDisable(personTableview.getItems().size() == 0);
+                    });
         personTableview.setContextMenu(contextMenu);
 
         ContextMenu contextMenu1 = getContextMenuForStatusLabel();
-        System.out.println(contextMenu1);
-        System.out.println(contextMenu1.getItems().size());
-        try {
-            contextMenu1.setOnShowing(event -> {
-                System.out.println("on showing");
-                contextMenu1.getItems().get(0).setDisable(!checkFilesExistsThread.isAlive());
-            });
-        }catch (NullPointerException ex){
-            System.out.println("npe on showing");
-            contextMenu1.getItems().get(0).setDisable(true);
-        }
+        contextMenu1.setOnShowing(event -> {
+            contextMenu1.getItems().get(0).setDisable(checkFilesExistsThread == null || !checkFilesExistsThread.isAlive());
+        });
         statusLabel.setContextMenu(contextMenu1);
 
         statusBar = new StatusBar(progressBar,statusLabel);
-//        checkFilesExistsThread  = new IsFileExistThread(statusBar,personTableview);
         System.out.println("init good");
     }
 
@@ -204,6 +181,7 @@ public class IndexController {
         statusBar.reset();
         final FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Импорт данных");
+        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Excel files","*.xlsx"));
         File file = fileChooser.showOpenDialog(parent.getScene().getWindow());
 
         if(file == null) return;
@@ -297,6 +275,7 @@ public class IndexController {
         statusLabel.setTooltip(statusTooltip);
         final FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Экспорт в эксель");
+        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Excel files","*.xlsx"));
         File file = fileChooser.showSaveDialog(parent.getScene().getWindow());
 
         if(file == null) return;
@@ -373,12 +352,21 @@ public class IndexController {
     private ContextMenu getContextMenu(){
         ContextMenu contextMenu = new ContextMenu();
         MenuItem item1 = new MenuItem("Удалить выделенное");
-        item1.setOnAction(event -> deleteRows(event));
-        contextMenu.getItems().add(item1);
+        MenuItem item2 = new MenuItem("Очистить таблицу");
+        item1.setOnAction(this::deleteRows);
+        item2.setOnAction(this::clearTable);
+        contextMenu.getItems().addAll(item1,item2);
 
         return contextMenu;
     }
 
+
+    private void clearTable(Event event){
+        synchronized (personTableview){
+            personTableview.getItems().clear();
+//            personTableview.refresh();
+        }
+    }
 
     private ContextMenu getContextMenuForStatusLabel(){
         ContextMenu contextMenu = new ContextMenu();

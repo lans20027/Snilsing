@@ -11,6 +11,7 @@ import java.io.*;
 import java.util.Properties;
 
 public class MainWindow extends Application {
+
     private Settings settings;
 
     public static void main(String[] args){

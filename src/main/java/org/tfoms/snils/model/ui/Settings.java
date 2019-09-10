@@ -10,9 +10,9 @@ import java.util.Properties;
 
 public class Settings {
     private final String defaultTimeWait = "600";
-    private final String defaultResponseFolder = "\\\\srv-term03\\54202_3s\\in\\snils";
-    private final String defaultRequestFolder = "\\\\srv-term03\\54202_3s\\out";
-    private final String defaultErrorFolder = "\\\\srv-term03\\54202_3s\\in\\error";
+    private final String defaultResponseFolder = "\\\\srv-term03\\542202_3s\\in\\snils\\";
+    private final String defaultRequestFolder = "\\\\srv-term03\\542202_3s\\out\\";
+    private final String defaultErrorFolder = "\\\\srv-term03\\542202_3s\\in\\error\\";
     private final boolean defaultSaveResponse = false;
 
 

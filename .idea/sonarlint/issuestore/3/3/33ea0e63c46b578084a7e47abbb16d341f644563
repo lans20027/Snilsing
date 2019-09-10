@@ -1,44 +1,22 @@
 
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(àşµ¢úÿÿÿÿ8¶Åú¤Ğ-
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(©ò¬·üÿÿÿÿ8¶Åú¤Ğ-
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(–ûüÿÿÿÿ8¶Åú¤Ğ-
-Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¶Åú¤Ğ-
-esquid:UselessImportCheck"<Remove this unused import 'org.tfoms.snils.model.FindSnils'.(”ÿĞ³8¶Åú¤Ğ-
-ssquid:UselessImportCheck"ERemove this unused import 'javax.xml.parsers.DocumentBuilderFactory'.(»·±Ñüÿÿÿÿ8¶Åú¤Ğ-
-Ysquid:UselessImportCheck"0Remove this unused import 'java.nio.file.Paths'.(áè°¯8¶Åú¤Ğ-
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÔØ‹¿øÿÿÿÿ8¶Åú¤Ğ-
-Zsquid:UselessImportCheck"1Remove this unused import 'org.w3c.dom.NodeList'.(ÂÈÃ‚8¶Åú¤Ğ-
-isquid:UselessImportCheck";Remove this unused import 'java.util.concurrent.Executors'.(äåÒÛÿÿÿÿÿ8¶Åú¤Ğ-
-dsquid:UselessImportCheck";Remove this unused import 'org.tfoms.snils.xmls.XmlParser'.(õ¨ÆÃ8¶Åú¤Ğ-
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(¤ªç’8¶Åú¤Ğ-
-Xsquid:UselessImportCheck"/Remove this unused import 'java.nio.file.Path'.(×²êÂ8¶Åú¤Ğ-
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ßÄÎè8¶Åú¤Ğ-
-nsquid:S1192"MDefine a constant instead of duplicating this literal "Ğ“Ğ¾Ñ‚Ğ¾Ğ²Ğ¾" 3 times.(Ö÷î‰úÿÿÿÿ8¶Åú¤Ğ-
-csquid:UselessImportCheck":Remove this unused import 'java.nio.file.DirectoryStream'.(Ë“ÚÃ8¶Åú¤Ğ-
-csquid:UselessImportCheck":Remove this unused import 'java.util.concurrent.TimeUnit'.(Æ™ş8¶Åú¤Ğ-
-xsquid:UselessImportCheck"JRemove this unused import 'java.util.concurrent.ScheduledExecutorService'.(Êßˆÿÿÿÿÿ8¶Åú¤Ğ-
-Zsquid:UselessImportCheck"1Remove this unused import 'org.w3c.dom.Document'.(Á§²“8¶Åú¤Ğ-
-fsquid:HiddenFieldCheck":Rename "parent" which hides the field declared at line 49.(ßæ¥¢ûÿÿÿÿ8¶Åú¤Ğ-
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(½³õ8¶Åú¤Ğ-
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(†ŒÉÿ8¶Åú¤Ğ-
-tsquid:UselessImportCheck"FRemove this unused import 'org.tfoms.snils.hibernateDB.HibernateUtil'.(èÈôĞşÿÿÿÿ8¶Åú¤Ğ-
-Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¶Åú¤Ğ-
-=squid:S1170"!Make this final field static too.(±€¡Ü8¶Åú¤Ğ-
-Hsquid:S1612",Replace this lambda with a method reference.(üåŒõ8¶Åú¤Ğ-
-ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(™…ÚŸÿÿÿÿÿ8¶Åú¤Ğ-
-`squid:UselessImportCheck"2Remove this unused import 'org.hibernate.Session'.(È¹›§ùÿÿÿÿ8¶Åú¤Ğ-
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(©ô¸„ÿÿÿÿÿ8¶Åú¤Ğ-
-lsquid:UselessImportCheck">Remove this unused import 'javax.xml.parsers.DocumentBuilder'.(ƒ”¯¹ùÿÿÿÿ8¶Åú¤Ğ-
-Ksquid:S1481"/Remove this unused "controller" local variable.(¾Ş‹æ8¶Åú¤Ğ-
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(³ÚÀæûÿÿÿÿ8¶Åú¤Ğ-
-csquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(Ïÿ€Ğ8¶Åú¤Ğ-
-Zsquid:S1854">Remove this useless assignment to local variable "controller".(¾Ş‹æ8¶Åú¤Ğ-
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(»Å¿ùÿÿÿÿ8¶Åú¤Ğ-
+\
+squid:S106Ñ"9Replace this use of System.out or System.err by a logger.(ÔØ‹¿øÿÿÿÿ8¶Åú¤Ğ-
+V
+squid:S106j"9Replace this use of System.out or System.err by a logger.(¤ªç’8¶Åú¤Ğ-
+Msquid:S1481"/Remove this unused "controller" local variable.(¾Ş‹æ8¶Åú¤Ğ-
+\squid:S1854">Remove this useless assignment to local variable "controller".(¾Ş‹æ8¶Åú¤Ğ-
+Ysquid:S1141Õ"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¶Åú¤Ğ-
+fsquid:S00112â"FDefine and throw a dedicated exception instead of using a generic one.(Ïÿ€Ğ8¶Åú¤Ğ-
+Ysquid:S1141è"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¶Åú¤Ğ-
+?squid:S1170H"!Make this final field static too.(±€¡Ü8¶Åú¤Ğ-
+qsquid:S1192¡"MDefine a constant instead of duplicating this literal "Ğ“Ğ¾Ñ‚Ğ¾Ğ²Ğ¾" 3 times.(Ö÷î‰úÿÿÿÿ8¶Åú¤Ğ-
+\
+squid:S106ñ"9Replace this use of System.out or System.err by a logger.(–ûüÿÿÿÿ8¶Åú¤Ğ-
+osquid:CommentedOutCodeLineï"<This block of commented-out lines of code should be removed.(¬¿±“ùÿÿÿÿ8¸°ïŸÑ-
+hsquid:HiddenFieldCheck~":Rename "parent" which hides the field declared at line 34.(ßæ¥¢ûÿÿÿÿ8¶Åú¤Ğ-
+osquid:CommentedOutCodeLineÿ"<This block of commented-out lines of code should be removed.(»Å¿ùÿÿÿÿ8¶Åú¤Ğ-
+vsquid:S3776´"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(™…ÚŸÿÿÿÿÿ8¶Åú¤Ğ-
+Ksquid:S1172ì",Remove this unused method parameter "event".(‚´Á8ßÎÄŸÑ-
+Osquid:S1602d",Remove useless curly braces around statement(´õ½Öüÿÿÿÿ8¸ìŸÑ-
+[
+squid:S106Y"9Replace this use of System.out or System.err by a logger.(©ò¬·üÿÿÿÿ8¶Åú¤Ğ-
