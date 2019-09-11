@@ -11,11 +11,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/5/35570ccea9fd3bd0527756d78b6161c588e0fc83" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/5/35570ccea9fd3bd0527756d78b6161c588e0fc83" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/2/4296be04eb292941e8b4e8ad399136be6c108610" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/2/4296be04eb292941e8b4e8ad399136be6c108610" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/2/42bac84bd162a2ea1cf1efd8ada2a5be6e5feb81" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/2/42bac84bd162a2ea1cf1efd8ada2a5be6e5feb81" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ad7a558eb2474d01e19cfb48c74a28d88d8538e4" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ad7a558eb2474d01e19cfb48c74a28d88d8538e4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e2ef97d27d30b1db64e6a5e776b763024f11da46" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e2ef97d27d30b1db64e6a5e776b763024f11da46" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/ed6a43004c0a708eec1df84b7626028cf35bbd23" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/ed6a43004c0a708eec1df84b7626028cf35bbd23" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/MainWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/fxcontrollers/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/fxcontrollers/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/TablePerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/TablePerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/fxcontrollers/SettingsDialogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/fxcontrollers/SettingsDialogController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/ui/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/ui/Settings.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -62,17 +63,13 @@
       <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/fxcontrollers/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="90" column="85" selection-start-line="90" selection-start-column="85" selection-end-line="90" selection-end-column="85" />
+            <state relative-caret-position="374">
+              <caret line="123" selection-start-line="123" selection-end-line="123" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4806#4807#0" expanded="true" />
-                <element signature="e#4874#4875#0" expanded="true" />
                 <element signature="method#openSettings#0;class#IndexController#0" />
                 <element signature="method#importExcel#0;class#IndexController#0" />
                 <element signature="method#exportExcel#0;class#IndexController#0" />
-                <element signature="e#15361#15362#0" expanded="true" />
-                <element signature="e#15449#15450#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,8 +78,8 @@
       <file leaf-file-name="standalone.xml" pinned="false" current-in-tab="false">
         <entry file="file://C:/Java/wildfly-10.1.0.Final/wildfly-10.1.0.Final/standalone/configuration/standalone.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="149" column="29" lean-forward="true" selection-start-line="149" selection-start-column="29" selection-end-line="149" selection-end-column="29" />
+            <state relative-caret-position="2533">
+              <caret line="149" column="29" selection-start-line="149" selection-start-column="29" selection-end-line="149" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -91,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/dao/SnilsDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -100,16 +97,16 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/TablePerson.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SettingsDialogController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SettingsDialogController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/fxcontrollers/SettingsDialogController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1445">
-              <caret line="95" column="50" selection-start-line="95" selection-start-column="50" selection-end-line="95" selection-end-column="50" />
+            <state relative-caret-position="206">
+              <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,15 +114,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Settings.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Settings.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/ui/Settings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+            <state relative-caret-position="265">
+              <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3743#3744#0" expanded="true" />
-                <element signature="e#3777#3778#0" expanded="true" />
+                <element signature="e#3731#3732#0" expanded="true" />
+                <element signature="e#3761#3762#0" expanded="true" />
+                <element signature="e#3807#3808#0" expanded="true" />
+                <element signature="e#3845#3846#0" expanded="true" />
+                <element signature="e#4312#4313#0" expanded="true" />
+                <element signature="e#4343#4344#0" expanded="true" />
+                <element signature="e#4391#4392#0" expanded="true" />
+                <element signature="e#4431#4432#0" expanded="true" />
+                <element signature="e#4472#4473#0" expanded="true" />
+                <element signature="e#4509#4510#0" expanded="true" />
+                <element signature="e#4569#4570#0" expanded="true" />
+                <element signature="e#4621#4622#0" expanded="true" />
+                <element signature="e#4659#4660#0" expanded="true" />
+                <element signature="e#4693#4694#0" expanded="true" />
+                <element signature="e#4747#4748#0" expanded="true" />
+                <element signature="e#4793#4794#0" expanded="true" />
+                <element signature="e#4833#4834#0" expanded="true" />
+                <element signature="e#4869#4870#0" expanded="true" />
+                <element signature="e#4927#4928#0" expanded="true" />
+                <element signature="e#4977#4978#0" expanded="true" />
+                <element signature="e#5016#5017#0" expanded="true" />
+                <element signature="e#5051#5052#0" expanded="true" />
+                <element signature="e#5108#5109#0" expanded="true" />
+                <element signature="e#5156#5157#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -134,8 +153,8 @@
       <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="221">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -143,7 +162,7 @@
       <file leaf-file-name="XmlParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/xmls/XmlParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
+            <state relative-caret-position="2040">
               <caret line="271" column="47" selection-start-line="271" selection-start-column="47" selection-end-line="271" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -225,17 +244,17 @@
         <option value="$PROJECT_DIR$/src/main/resources/fxml/settings.fxml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/FindSnils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/xmls/XmlParser.java" />
         <option value="$PROJECT_DIR$/target/classes/props/setting.properties" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1ce10ab2-252a-4524-9aec-02a04a73a0bf/console_1.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/fxcontrollers/SettingsDialogController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/props/setting.properties" />
         <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/fxcontrollers/IsFileExistThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/dao/SnilsDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/TablePerson.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/fxcontrollers/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/ui/Settings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/tfoms/snils/fxcontrollers/SettingsDialogController.java" />
       </list>
     </option>
   </component>
@@ -279,10 +298,13 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="width" value="1932" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -291,6 +313,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -314,6 +337,21 @@
               <item name="Snilsing" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Snilsing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Snilsing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="snils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Snilsing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Snilsing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -324,18 +362,11 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="fxml" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Snilsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Snilsing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -497,11 +528,14 @@
       <workItem from="1567735322819" duration="13039000" />
       <workItem from="1567760735216" duration="2922000" />
       <workItem from="1567994814832" duration="8006000" />
+      <workItem from="1568112445509" duration="320000" />
+      <workItem from="1568189438289" duration="2645000" />
+      <workItem from="1568193019360" duration="5961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="245104000" />
+    <option name="totallyTimeSpent" value="254030000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -513,17 +547,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50053304" side_tool="true" weight="0.2437432" />
-      <window_info anchor="right" id="Maven Projects" order="8" weight="0.14658849" />
+      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.14636752" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="3" />
       <window_info anchor="right" id="Database" order="5" weight="0.15565032" />
-      <window_info id="Structure" order="1" sideWeight="0.5255713" side_tool="true" visible="true" weight="0.28198293" />
+      <window_info id="Structure" order="1" sideWeight="0.16558442" side_tool="true" visible="true" weight="0.29220086" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="5" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934713" />
@@ -533,11 +566,11 @@
       <window_info id="Image Layers" order="4" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.3297062" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.4069641" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.23612623" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="12" visible="true" weight="0.3297062" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.4156692" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.4853101" />
       <window_info id="Persistence" order="2" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4744287" visible="true" weight="0.28198293" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.83441556" visible="true" weight="0.29220086" />
       <window_info anchor="bottom" id="SonarLint" order="10" weight="0.3297062" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="6" side_tool="true" />
@@ -724,9 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -744,13 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1ce10ab2-252a-4524-9aec-02a04a73a0bf/console_1.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -762,16 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/fxcontrollers/SettingsDialogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
-          <caret line="95" column="50" selection-start-line="95" selection-start-column="50" selection-end-line="95" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -806,44 +819,20 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/dao/SnilsDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/TablePerson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/fxcontrollers/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="90" column="85" selection-start-line="90" selection-start-column="85" selection-end-line="90" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4806#4807#0" expanded="true" />
-            <element signature="e#4874#4875#0" expanded="true" />
-            <element signature="method#openSettings#0;class#IndexController#0" />
-            <element signature="method#importExcel#0;class#IndexController#0" />
-            <element signature="method#exportExcel#0;class#IndexController#0" />
-            <element signature="e#15361#15362#0" expanded="true" />
-            <element signature="e#15449#15450#0" expanded="true" />
-          </folding>
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://C:/Java/wildfly-10.1.0.Final/wildfly-10.1.0.Final/standalone/configuration/standalone.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="149" column="29" lean-forward="true" selection-start-line="149" selection-start-column="29" selection-end-line="149" selection-end-column="29" />
+        <state relative-caret-position="2533">
+          <caret line="149" column="29" selection-start-line="149" selection-start-column="29" selection-end-line="149" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/xmls/XmlParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
+        <state relative-caret-position="2040">
           <caret line="271" column="47" selection-start-line="271" selection-start-column="47" selection-end-line="271" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -852,14 +841,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/ui/Settings.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/TablePerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/fxcontrollers/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <caret line="123" selection-start-line="123" selection-end-line="123" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3743#3744#0" expanded="true" />
-            <element signature="e#3777#3778#0" expanded="true" />
+            <element signature="method#openSettings#0;class#IndexController#0" />
+            <element signature="method#importExcel#0;class#IndexController#0" />
+            <element signature="method#exportExcel#0;class#IndexController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/model/ui/Settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3731#3732#0" expanded="true" />
+            <element signature="e#3761#3762#0" expanded="true" />
+            <element signature="e#3807#3808#0" expanded="true" />
+            <element signature="e#3845#3846#0" expanded="true" />
+            <element signature="e#4312#4313#0" expanded="true" />
+            <element signature="e#4343#4344#0" expanded="true" />
+            <element signature="e#4391#4392#0" expanded="true" />
+            <element signature="e#4431#4432#0" expanded="true" />
+            <element signature="e#4472#4473#0" expanded="true" />
+            <element signature="e#4509#4510#0" expanded="true" />
+            <element signature="e#4569#4570#0" expanded="true" />
+            <element signature="e#4621#4622#0" expanded="true" />
+            <element signature="e#4659#4660#0" expanded="true" />
+            <element signature="e#4693#4694#0" expanded="true" />
+            <element signature="e#4747#4748#0" expanded="true" />
+            <element signature="e#4793#4794#0" expanded="true" />
+            <element signature="e#4833#4834#0" expanded="true" />
+            <element signature="e#4869#4870#0" expanded="true" />
+            <element signature="e#4927#4928#0" expanded="true" />
+            <element signature="e#4977#4978#0" expanded="true" />
+            <element signature="e#5016#5017#0" expanded="true" />
+            <element signature="e#5051#5052#0" expanded="true" />
+            <element signature="e#5108#5109#0" expanded="true" />
+            <element signature="e#5156#5157#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/tfoms/snils/fxcontrollers/SettingsDialogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

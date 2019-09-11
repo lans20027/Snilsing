@@ -34,7 +34,6 @@ public class SettingsDialogController {
     @FXML
     private Label statusLabel;
 
-
     private final Settings settings = new Settings();
 
     @FXML
@@ -45,7 +44,6 @@ public class SettingsDialogController {
 
     @FXML
     private void saveSettings(){
-        if(areYouSure("Сохранить настройки")) {
             settings.setErrorFolder(fieldErrorFolder.getText().trim());
             settings.setRequestFolder(fieldRequestFolder.getText().trim());
             settings.setResponseFolder(fieldResponseFolder.getText().trim());
@@ -56,8 +54,6 @@ public class SettingsDialogController {
             refresh();
             isChanged = false;
             reject();
-        }
-
     }
 
     @FXML

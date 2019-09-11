@@ -46,6 +46,8 @@ public class IndexController {
     @FXML
     MenuItem menuImport;
 
+    @FXML
+    Label infoLabel;
 
     @FXML
     private TableView<TablePerson> personTableview;
@@ -77,6 +79,19 @@ public class IndexController {
 
     @FXML
     public void initialize(){
+        try {
+            ClassLoader classLoader = getClass().getClassLoader();
+            String is = classLoader.getResource("1.txt").getPath();
+//            System.out.println(is);
+            infoLabel.setText(is);
+        }catch (Exception e){
+            infoLabel.setText(e.getMessage());
+        }
+
+
+
+
+
         enpCol.setCellValueFactory(new PropertyValueFactory<>("enp"));
         snilsCol.setCellValueFactory(new PropertyValueFactory<>("snils"));
         famCol.setCellValueFactory(new PropertyValueFactory<>("personSurname"));
@@ -104,6 +119,7 @@ public class IndexController {
 
         statusBar = new StatusBar(progressBar,statusLabel);
         System.out.println("init good");
+        infoLabel.setText(infoLabel.getText() + "init good");
     }
 
     @FXML

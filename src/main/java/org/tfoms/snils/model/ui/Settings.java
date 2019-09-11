@@ -2,10 +2,7 @@ package org.tfoms.snils.model.ui;
 
 import javafx.scene.layout.BorderPane;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
+import java.io.*;
 import java.util.Properties;
 
 public class Settings {
@@ -71,9 +68,10 @@ public class Settings {
 
             String path = getClass().getClassLoader().getResource("props/setting.properties").getPath();
             System.out.println("saving:" + this + "\n into " + path );
-
-            this.properties.store(new FileOutputStream(path),"user saved");
-
+            FileWriter writer = new FileWriter(path);
+//            this.properties.store(new FileOutputStream(path),"user save");
+            this.properties.store(writer,"user save");
+            writer.close();
             System.out.println("save ok");
             return true;
         } catch (IOException e) {

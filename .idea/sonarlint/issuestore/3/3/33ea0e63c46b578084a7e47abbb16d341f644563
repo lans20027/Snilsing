@@ -1,22 +1,23 @@
 
-\
-squid:S106Ñ"9Replace this use of System.out or System.err by a logger.(ÔØ‹¿øÿÿÿÿ8¶Åú¤Ğ-
-V
-squid:S106j"9Replace this use of System.out or System.err by a logger.(¤ªç’8¶Åú¤Ğ-
-Msquid:S1481"/Remove this unused "controller" local variable.(¾Ş‹æ8¶Åú¤Ğ-
-\squid:S1854">Remove this useless assignment to local variable "controller".(¾Ş‹æ8¶Åú¤Ğ-
-Ysquid:S1141Õ"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¶Åú¤Ğ-
-fsquid:S00112â"FDefine and throw a dedicated exception instead of using a generic one.(Ïÿ€Ğ8¶Åú¤Ğ-
-Ysquid:S1141è"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¶Åú¤Ğ-
-?squid:S1170H"!Make this final field static too.(±€¡Ü8¶Åú¤Ğ-
-qsquid:S1192¡"MDefine a constant instead of duplicating this literal "Ğ“Ğ¾Ñ‚Ğ¾Ğ²Ğ¾" 3 times.(Ö÷î‰úÿÿÿÿ8¶Åú¤Ğ-
-\
-squid:S106ñ"9Replace this use of System.out or System.err by a logger.(–ûüÿÿÿÿ8¶Åú¤Ğ-
-osquid:CommentedOutCodeLineï"<This block of commented-out lines of code should be removed.(¬¿±“ùÿÿÿÿ8¸°ïŸÑ-
-hsquid:HiddenFieldCheck~":Rename "parent" which hides the field declared at line 34.(ßæ¥¢ûÿÿÿÿ8¶Åú¤Ğ-
-osquid:CommentedOutCodeLineÿ"<This block of commented-out lines of code should be removed.(»Å¿ùÿÿÿÿ8¶Åú¤Ğ-
-vsquid:S3776´"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(™…ÚŸÿÿÿÿÿ8¶Åú¤Ğ-
-Ksquid:S1172ì",Remove this unused method parameter "event".(‚´Á8ßÎÄŸÑ-
-Osquid:S1602d",Remove useless curly braces around statement(´õ½Öüÿÿÿÿ8¸ìŸÑ-
+Ysquid:S1141å"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ÈŠûûÑ-
+fsquid:S00112ò"FDefine and throw a dedicated exception instead of using a generic one.(Ïÿ€Ğ8ÈŠûûÑ-
 [
-squid:S106Y"9Replace this use of System.out or System.err by a logger.(©ò¬·üÿÿÿÿ8¶Åú¤Ğ-
+squid:S106h"9Replace this use of System.out or System.err by a logger.(©ò¬·üÿÿÿÿ8ÈŠûûÑ-
+osquid:CommentedOutCodeLineÿ"<This block of commented-out lines of code should be removed.(¬¿±“ùÿÿÿÿ8ÈŠûûÑ-
+Ksquid:S1172ü",Remove this unused method parameter "event".(‚´Á8ÈŠûûÑ-
+osquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(»Å¿ùÿÿÿÿ8ÈŠûûÑ-
+\
+squid:S106á"9Replace this use of System.out or System.err by a logger.(ÔØ‹¿øÿÿÿÿ8ÈŠûûÑ-
+Nsquid:S1481"/Remove this unused "controller" local variable.(¾Ş‹æ8ÈŠûûÑ-
+?squid:S1170J"!Make this final field static too.(±€¡Ü8ÈŠûûÑ-
+qsquid:S1192±"MDefine a constant instead of duplicating this literal "Ğ“Ğ¾Ñ‚Ğ¾Ğ²Ğ¾" 3 times.(Ö÷î‰úÿÿÿÿ8ÈŠûûÑ-
+\
+squid:S106"9Replace this use of System.out or System.err by a logger.(–ûüÿÿÿÿ8ÈŠûûÑ-
+Ysquid:S1141ø"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ÈŠûûÑ-
+vsquid:S3776Ä"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(™…ÚŸÿÿÿÿÿ8ÈŠûûÑ-
+V
+squid:S106y"9Replace this use of System.out or System.err by a logger.(¤ªç’8ÈŠûûÑ-
+Osquid:S1602s",Remove useless curly braces around statement(´õ½Öüÿÿÿÿ8ÈŠûûÑ-
+]squid:S1854">Remove this useless assignment to local variable "controller".(¾Ş‹æ8ÈŠûûÑ-
+isquid:HiddenFieldCheck":Rename "parent" which hides the field declared at line 34.(ßæ¥¢ûÿÿÿÿ8ÈŠûûÑ-
+nsquid:CommentedOutCodeLineU"<This block of commented-out lines of code should be removed.(“š³çûÿÿÿÿ8¡óüûÑ-

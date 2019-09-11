@@ -1,15 +1,15 @@
 
-V
-squid:S106*"9Replace this use of System.out or System.err by a logger.(¤ªç’8ïïø¤Ğ-
-[
-squid:S106O"9Replace this use of System.out or System.err by a logger.(¹Âİşÿÿÿÿ8·ğ“¦Ğ-
 isquid:UselessImportCheck"?Remove this unused import 'org.tfoms.snils.model.ui.StatusBar'.(úÅÔB8¹±ˆ§Ğ-
-Xsquid:S3655d"5Call "result.isPresent()" before accessing the value.(×â¢‹şÿÿÿÿ8ÕÂÚ¦Ğ-
-[
-squid:S1066"9Replace this use of System.out or System.err by a logger.(ÖÄÏıøÿÿÿÿ8ß„ä¥Ğ-
-Tsquid:UselessImportCheck
-")Remove this unused import 'java.io.File'.(†Ğ¥Å8ë±ç¤Ğ-
-\squid:UselessImportCheck"1Remove this unused import 'java.util.Properties'.(¬µ²8ÉÅŞ®Ğ-
 dsquid:UselessImportCheck	"4Remove this unused import 'java.beans.EventHandler'.(š‚Àíùÿÿÿÿ8¹±ˆ§Ğ-
 dsquid:S1126d"AReplace this if-then-else statement by a single return statement.(×â¢‹şÿÿÿÿ8åÚ¦Ğ-
 `squid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8Õ¬¯¥Ğ-
+[
+squid:S106O"9Replace this use of System.out or System.err by a logger.(¹Âİşÿÿÿÿ8·ğ“¦Ğ-
+\squid:UselessImportCheck"1Remove this unused import 'java.util.Properties'.(¬µ²8ÉÅŞ®Ğ-
+Tsquid:UselessImportCheck
+")Remove this unused import 'java.io.File'.(†Ğ¥Å8ë±ç¤Ğ-
+Xsquid:S3655d"5Call "result.isPresent()" before accessing the value.(×â¢‹şÿÿÿÿ8ÕÂÚ¦Ğ-
+V
+squid:S106*"9Replace this use of System.out or System.err by a logger.(¤ªç’8ïïø¤Ğ-
+[
+squid:S1066"9Replace this use of System.out or System.err by a logger.(ÖÄÏıøÿÿÿÿ8ß„ä¥Ğ-

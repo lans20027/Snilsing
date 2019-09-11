@@ -8,17 +8,21 @@ import javafx.stage.Stage;
 import org.tfoms.snils.model.ui.Settings;
 
 import java.io.*;
+import java.net.URL;
 import java.util.Properties;
 
 public class MainWindow extends Application {
 
     private Settings settings;
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         launch(args);
     }
+
     @Override
     public void start(Stage primaryStage) throws Exception {
+        System.out.println("start");
+
         FXMLLoader loader = new FXMLLoader();
         Parent root = loader.load(getClass().getClassLoader().getResourceAsStream("fxml/index.fxml"));
         primaryStage.setScene(new Scene(root));
