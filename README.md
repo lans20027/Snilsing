@@ -1,1 +1,6 @@
-# Snilsing
+# Snilsing 
+
+## Build notes
+
+
+
