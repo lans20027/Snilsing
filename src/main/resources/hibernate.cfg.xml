@@ -12,8 +12,6 @@
     <property name="hibernate.hbm2ddl.auto">update</property>
     <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
 
-    <!-- DB schema will be updated if needed -->
-    <!-- <property name="hbm2ddl.auto">update</property> -->
     <mapping class="org.tfoms.snils.model.FindSnils" />
     <mapping class="org.tfoms.snils.model.Person"/>
     <mapping class="org.tfoms.snils.model.Personadd"/>

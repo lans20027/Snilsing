@@ -1,4 +1,0 @@
-
-\squid:UselessImportCheck"1Remove this unused import 'java.util.Properties'.(¬µ²8üöì¦Ğ-
-Ysquid:UselessImportCheck")Remove this unused import 'java.net.URL'.(ñìÁ„üÿÿÿÿ8¤ÒáûÑ-
-zsquid:S1450"WRemove the "settings" field and declare it as a local variable in the relevant methods.(¦­È’ûÿÿÿÿ8£‡¿§Ğ-

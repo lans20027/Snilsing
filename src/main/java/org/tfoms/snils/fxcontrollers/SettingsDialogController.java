@@ -38,7 +38,6 @@ public class SettingsDialogController {
 
     @FXML
     void initialize(){
-        System.out.println("init good");
         refresh();
     }
 

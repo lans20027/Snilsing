@@ -1,7 +1,0 @@
-
-vsquid:S00116"RRename this field "number_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ¶Â©ÿÿÿÿÿ8 Òþ†Î-
-_squid:S1710	"<Remove the 'NamedQueries' wrapper from this annotation group(¨‘¯¼ûÿÿÿÿ8£¡ˆÎ-
-lsquid:S00100["NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(þðh8º¿íŠÎ-
-rsquid:S00100_"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂžËþÿÿÿÿ8º¿íŠÎ-
-usquid:S00117_"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂžËþÿÿÿÿ8º¿íŠÎ-
-}squid:S4144s"ZUpdate this method so that its implementation is not identical to "getNumber_" on line 91.(çÃ¯©üÿÿÿÿ8º¿íŠÎ-

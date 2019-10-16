@@ -184,7 +184,7 @@ public class XmlParser {
         }
     }
 
-    public boolean createDocument(TablePerson person) throws NullPointerException,ParserConfigurationException
+    public boolean createDocument(TablePerson person) throws ParserConfigurationException
             , TransformerException{
 
             DocumentBuilderFactory documentFactory = DocumentBuilderFactory.newInstance();
@@ -249,7 +249,7 @@ public class XmlParser {
             root.appendChild(birthDate);
 
             Element gender = document.createElement("tns:Gender");
-            gender.appendChild(document.createTextNode(person.getSex()));
+            gender.appendChild(document.createTextNode(person.getSex() == null ? "" : person.getSex()));
             root.appendChild(gender);
 
             if(person.getPersonadd() != null) {
@@ -262,11 +262,11 @@ public class XmlParser {
             Element passport = document.createElement("smev:PassportRF");
 
             Element series = document.createElement("smev:Series");
-            series.appendChild(document.createTextNode(person.getPersonSerdoc().replaceAll(" ","")));
+            series.appendChild(document.createTextNode(person.getPersonSerdoc() == null ? "" : person.getPersonSerdoc().replaceAll(" ","")));
             passport.appendChild(series);
 
             Element number = document.createElement("smev:Number");
-            number.appendChild(document.createTextNode(person.getPersonNumdoc()));
+            number.appendChild(document.createTextNode(person.getPersonNumdoc() == null ? "" : person.getPersonNumdoc()));
             passport.appendChild(number);
 
             if(person.getPersonadd() != null) {

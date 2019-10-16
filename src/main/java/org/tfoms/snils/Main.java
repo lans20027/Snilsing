@@ -1,5 +1,6 @@
 package org.tfoms.snils;
 
+import org.apache.xmlbeans.impl.regex.Match;
 import org.tfoms.snils.dao.FindSnilsDAO;
 import org.tfoms.snils.dao.SnilsDAO;
 import org.tfoms.snils.model.*;
@@ -21,8 +22,6 @@ class Thread1 extends Thread{
     Thread1(Thread s){
         super("Thread111");
         superThread = s;
-
-
     }
 
     @Override
@@ -41,17 +40,52 @@ class Thread1 extends Thread{
             service.shutdownNow();
             System.out.println("ok goodbye");
         }
-//        System.out.println("time to kill me");
     }
 }
 
 
+class DemoT extends Thread{
+    String s;
+
+    DemoT(String t){
+        s = t;
+    }
+
+
+    void show(){
+        synchronized (s) {
+            for (int i = 0; i < 4; i++) {
+                System.out.println(i);
+                //System.out.print(s.charAt(i) + " ");
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    @Override
+    public void run() {
+        show();
+    }
+}
 
 
 public class Main {
     public static void main(String [] args) throws Exception{
-        Thread1 t = new Thread1(Thread.currentThread());
-        t.start();
+        String text = null;
+        String text2 = null;
+        DemoT t1 = new DemoT(text);
+        DemoT t2 = new DemoT(text2);
+
+        t1.start();
+        t2.start();
+
+
+
 
 //        Thread.sleep(5000);
 //        System.out.println("killing Hello from " + Thread.currentThread().getName());

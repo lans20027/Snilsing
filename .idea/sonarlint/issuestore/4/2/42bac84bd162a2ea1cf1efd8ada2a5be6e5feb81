@@ -1,37 +1,0 @@
-
-W
-squid:S106∂"9Replace this use of System.out or System.err by a logger.(âÎﬁà8ò ‰ß–-
-ysquid:S4435ß"ZSecure this "Transformer" by either disabling external DTDs or enabling secure processing.(›âÀñ8ò ‰ß–-
-qsquid:S3776∫"RRefactor this method to reduce its Cognitive Complexity from 67 to the 15 allowed.(æ˘œ‹8ò ‰ß–-
-osquid:CommentedOutCodeLine¶"<This block of commented-out lines of code should be removed.(…•ﬂı˝ˇˇˇˇ8ò ‰ß–-
-jsquid:CommentedOutCodeLine©"<This block of commented-out lines of code should be removed.(Å°Œƒ8ò ‰ß–-
-ysquid:S4435¢"ZSecure this "Transformer" by either disabling external DTDs or enabling secure processing.(›âÀñ8ò ‰ß–-
-Çsquid:UselessImportCheck"RRemove this unused import 'javax.xml.transform.TransformerConfigurationException'.(ŒØ´∂˚ˇˇˇˇ8√Ω◊§–-
-nsquid:CommentedOutCodeLineu"<This block of commented-out lines of code should be removed.(∫ªÁÂ¯ˇˇˇˇ8ò ‰ß–-
-isquid:CommentedOutCodeLine{"<This block of commented-out lines of code should be removed.(êÓ∫á8•Ã◊§–-
-\
-squid:S106ë"9Replace this use of System.out or System.err by a logger.(±îô†˛ˇˇˇˇ8•Ã◊§–-
-jsquid:CommentedOutCodeLineÆ"<This block of commented-out lines of code should be removed.(Å°Œƒ8ò ‰ß–-
-jsquid:CommentedOutCodeLine≥"<This block of commented-out lines of code should be removed.(††›∞8◊ÍÊß–-
-\
-squid:S106í"9Replace this use of System.out or System.err by a logger.(ﬁòÙ≠ˇˇˇˇˇ8ò ‰ß–-
-Ssquid:S1066Ú"/Merge this if statement with the enclosing one.(Õı˛ã˝ˇˇˇˇ8ò ‰ß–-
-;squid:S1643’"Use a StringBuilder instead.(Ω˝»ˆ8ò ‰ß–-
-osquid:CommentedOutCodeLine™"<This block of commented-out lines of code should be removed.(ŒØ∆Ô˘ˇˇˇˇ8◊ÍÊß–-
-isquid:CommentedOutCodeLinex"<This block of commented-out lines of code should be removed.(†Ωñß8ò ‰ß–-
-ß%squid:RedundantThrowsDeclarationCheckª"iRemove the declaration of thrown exception 'java.lang.NullPointerException' which is a runtime exception.(¿óïπ˝ˇˇˇˇ8ò ‰ß–-
-isquid:CommentedOutCodeLinel"<This block of commented-out lines of code should be removed.(¨ºãÛ8ò ‰ß–-
-\
-squid:S106¥"9Replace this use of System.out or System.err by a logger.(«®ñ¢¯ˇˇˇˇ8ò ‰ß–-
-dsquid:S2147≤"ECombine this catch with the one at line 175, which has the same body.(ˇÕ–â8ò ‰ß–-
-isquid:CommentedOutCodeLiner"<This block of commented-out lines of code should be removed.(ñòå≈8ò ‰ß–-
-W
-squid:S106ª"9Replace this use of System.out or System.err by a logger.(Á¢◊Î8ò ‰ß–-
-\
-squid:S106ì"9Replace this use of System.out or System.err by a logger.(≤†ﬂ∑˝ˇˇˇˇ8ò ‰ß–-
-isquid:CommentedOutCodeLine}"<This block of commented-out lines of code should be removed.(¢«©©8ò ‰ß–-
-jsquid:CommentedOutCodeLine∞"<This block of commented-out lines of code should be removed.(ê≈πÑ8ò ‰ß–-
-jsquid:CommentedOutCodeLine™"<This block of commented-out lines of code should be removed.(ì¿Ô˙8ò ‰ß–-
-osquid:CommentedOutCodeLine¥"<This block of commented-out lines of code should be removed.(·Á€≤˛ˇˇˇˇ8ò ‰ß–-
-W
-squid:S106œ"9Replace this use of System.out or System.err by a logger.(àõä÷8ò ‰ß–-

@@ -47,9 +47,6 @@ public class IndexController {
     MenuItem menuImport;
 
     @FXML
-    Label infoLabel;
-
-    @FXML
     private TableView<TablePerson> personTableview;
 
     @FXML
@@ -76,22 +73,12 @@ public class IndexController {
 
     private IsFileExistThread checkFilesExistsThread;
 
+    private File lastImported = null;
+    private File lastExported = null;
+
 
     @FXML
     public void initialize(){
-        try {
-            ClassLoader classLoader = getClass().getClassLoader();
-            String is = classLoader.getResource("1.txt").getPath();
-//            System.out.println(is);
-            infoLabel.setText(is);
-        }catch (Exception e){
-            infoLabel.setText(e.getMessage());
-        }
-
-
-
-
-
         enpCol.setCellValueFactory(new PropertyValueFactory<>("enp"));
         snilsCol.setCellValueFactory(new PropertyValueFactory<>("snils"));
         famCol.setCellValueFactory(new PropertyValueFactory<>("personSurname"));
@@ -119,7 +106,6 @@ public class IndexController {
 
         statusBar = new StatusBar(progressBar,statusLabel);
         System.out.println("init good");
-        infoLabel.setText(infoLabel.getText() + "init good");
     }
 
     @FXML
@@ -173,43 +159,41 @@ public class IndexController {
                 }
 
                 Platform.runLater(() -> {
-                    progressBar.setProgress(0);
-                    statusLabel.setText("Готово");
+                    statusBar.update("Статус",0);
                 });
             }catch (Exception ex){
                 Platform.runLater(() -> {
-                    progressBar.setProgress(0);
-                    statusLabel.setText("Ошибка при поиске снилсов");
-                    statusLabel.setTooltip(new Tooltip(ex.toString()));
+                    statusBar.update("Ошибка при поиске снилсов", ex.getMessage(),0);
                     menuExport.setDisable(false);
                 });
             }
         });
 
-        statusLabel.setTooltip(statusTooltip);
-        statusLabel.setText("Поиск людей в базе");
-        progressBar.setProgress(-1);
+
+        statusBar.update("Поиск людей в базе",-1);
         findSnilsGoodThread.start();
     }
 
     @FXML
     public void importExcel(){
         statusBar.reset();
-        final FileChooser fileChooser = new FileChooser();
+        FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Импорт данных");
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Excel files","*.xlsx"));
+        if(lastImported != null){
+            fileChooser.setInitialDirectory(lastImported.getParentFile());
+            fileChooser.setInitialFileName(lastImported.getName());
+        }
         File file = fileChooser.showOpenDialog(parent.getScene().getWindow());
 
         if(file == null) return;
+        lastImported = file;
+
+
+        statusBar.update("Считывание из экселя",-1);
+        menuExport.setDisable(true);
 
         Thread thread = new Thread(() -> {
-            Platform.runLater(() -> {
-                menuExport.setDisable(true);
-                progressBar.setProgress(-1);
-                statusLabel.setText("Считывание из экселя");
-            });
-
-
             try (XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(file))) {
                 XSSFSheet sheet = workbook.getSheetAt(0);
                 int rows = sheet.getPhysicalNumberOfRows();
@@ -222,7 +206,6 @@ public class IndexController {
                 String mode = sheet.getRow(0).getCell(0).getStringCellValue();
 
                 if(mode != null && (mode.equalsIgnoreCase("prizyv") || mode.contains("prizyv"))){
-                    System.out.println("prizyw");
                     for (int i = 1; i < rows; i++) {
                         Row row = sheet.getRow(i);
                         if(row.getCell(0).getStringCellValue() == null || row.getCell(0).getStringCellValue().length() == 0) break;
@@ -254,7 +237,6 @@ public class IndexController {
                     data = FindSnilsDAO.findPersonByEnp1(enps);
                 }
 
-                System.out.println("data[0]:" + data.get(0));
 
                 synchronized (personData) {
                     personData.clear();
@@ -268,17 +250,13 @@ public class IndexController {
 
 
                 Platform.runLater(() -> {
-//                    statusBar.update("Готово","Ошибок нет",0);
-                    progressBar.setProgress(0);
-                    statusLabel.setText("Готово");
+                    statusBar.update("Импорт готово",0);
                     menuExport.setDisable(false);
                 });
 
             }catch (Exception ex){
                 Platform.runLater(() -> {
-                    progressBar.setProgress(0);
-                    statusLabel.setText("Ошибка при импорте");
-                    statusLabel.setTooltip(new Tooltip(ex.toString()));
+                    statusBar.update("Ошибка при импорте",ex.getMessage(),0);
                     menuExport.setDisable(false);
                 });
             }
@@ -288,23 +266,26 @@ public class IndexController {
 
     @FXML
     public void exportExcel(){
-        statusLabel.setTooltip(statusTooltip);
-        final FileChooser fileChooser = new FileChooser();
+        statusBar.reset();
+
+        FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Экспорт в эксель");
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Excel files","*.xlsx"));
+        if(lastExported != null){
+            fileChooser.setInitialDirectory(lastExported.getParentFile());
+            fileChooser.setInitialFileName(lastExported.getName());
+        }
         File file = fileChooser.showSaveDialog(parent.getScene().getWindow());
 
         if(file == null) return;
+        lastExported = file;
 
 
+
+        menuImport.setDisable(true);
+        statusBar.update("Запись в эксель",-1);
 
         Thread thread = new Thread(() -> {
-            Platform.runLater(() -> {
-                menuImport.setDisable(true);
-                progressBar.setProgress(-1);
-                statusLabel.setText("Запись в эксель");
-            });
-
             try (XSSFWorkbook workbook = new XSSFWorkbook()) {
                 XSSFSheet sheet = workbook.createSheet("Данные");
 
@@ -333,15 +314,12 @@ public class IndexController {
                 }
                 workbook.write(new FileOutputStream(file));
                 Platform.runLater(() -> {
-                    progressBar.setProgress(0);
-                    statusLabel.setText("Экспорт готово");
+                    statusBar.update("Экспорт готово",0);
                     menuImport.setDisable(false);
                 });
             }catch (Exception ex){
                 Platform.runLater(() -> {
-                    progressBar.setProgress(0);
-                    statusLabel.setText("Ошибка при экспорте");
-                    statusLabel.setTooltip(new Tooltip(ex.toString()));
+                    statusBar.update("Ошибка при экспорте",ex.getMessage(),0);
                     menuImport.setDisable(false);
                 });
             }
@@ -360,7 +338,10 @@ public class IndexController {
         Optional<ButtonType> result = alert.showAndWait();
         if (result.isPresent() && result.get() == ButtonType.OK) {
             ArrayList<TablePerson> rows = new ArrayList<>(selectedRows);
-            rows.forEach(row ->{ personTableview.getItems().remove(row);personData.remove(row);});
+            rows.forEach(row ->{
+                personTableview.getItems().remove(row);
+                personData.remove(row);
+            });
         }
     }
 
@@ -376,11 +357,9 @@ public class IndexController {
         return contextMenu;
     }
 
-
     private void clearTable(Event event){
         synchronized (personTableview){
             personTableview.getItems().clear();
-//            personTableview.refresh();
         }
     }
 
@@ -397,5 +376,17 @@ public class IndexController {
     }
 
 
+    private void showErrorDialog(String errorMsg){
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Ошибка");
+        alert.setContentText(errorMsg);
+        alert.showAndWait();
+    }
+
+    private void showErrorDialog(Exception errorMsg){
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setContentText(errorMsg.toString());
+        alert.showAndWait();
+    }
 
 }

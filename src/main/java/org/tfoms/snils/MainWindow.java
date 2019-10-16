@@ -21,8 +21,6 @@ public class MainWindow extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        System.out.println("start");
-
         FXMLLoader loader = new FXMLLoader();
         Parent root = loader.load(getClass().getClassLoader().getResourceAsStream("fxml/index.fxml"));
         primaryStage.setScene(new Scene(root));

@@ -26,6 +26,11 @@ public class StatusBar {
             this.statusLabel.setTooltip(new Tooltip(tooltipText));
     }
 
+    public void update(String labelText, double progress){
+        this.statusLabel.setText(labelText);
+        this.progressBar.setProgress(progress);
+        this.statusLabel.setTooltip(defaultTooltip);
+    }
 
     public void update(String labelText,String tooltipText,double progress){
         this.statusLabel.setText(labelText);

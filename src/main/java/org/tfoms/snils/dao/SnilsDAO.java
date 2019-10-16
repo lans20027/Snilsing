@@ -13,21 +13,23 @@ import java.util.List;
 
 
 public class SnilsDAO {
-    static EntityManager em = Persistence.createEntityManagerFactory("developerUnit").createEntityManager();
+//    static EntityManager em = Persistence.createEntityManagerFactory("developerUnit").createEntityManager();
 
     public static List<TablePerson> findSnilsGood(){
+        EntityManager em = Persistence.createEntityManagerFactory("developerUnit").createEntityManager();
         List<SnilsSaveResponse> snilses = em.createNamedQuery("findSnilsGood",SnilsSaveResponse.class).getResultList();
         ArrayList<TablePerson> data = new ArrayList<>();
 
         for(SnilsSaveResponse s : snilses){
             data.add(new TablePerson(s));
         }
-
+        em.close();
         return data;
     }
 
 
     public static TablePerson findPerson(String surname,String firstname,String lastname,Date birthday,String trueSer,String trueNum){
+        EntityManager em = Persistence.createEntityManagerFactory("developerUnit").createEntityManager();
         Person person = em.createNamedQuery("personByFIOD",Person.class)
                 .setParameter("surname",surname)
                 .setParameter("firstname",firstname)
@@ -38,12 +40,14 @@ public class SnilsDAO {
         tablePerson.setPersonSerdoc(trueSer);
         tablePerson.setPersonNumdoc(trueNum);
         tablePerson.setPersonadd(person.getPersonadd());
+        em.close();
         return tablePerson;
     }
 
 
     public static void insertPerson(TablePerson person){
-        if(person.getSnils().trim().equals("нет данных") || person.getSnils().trim().equals("-") || person.getSnils().trim().equals("ошибка")) return;
+        EntityManager em = Persistence.createEntityManagerFactory("developerUnit").createEntityManager();
+        if(person.getSnils().trim().toLowerCase().contains("нет данных") || person.getSnils().trim().equals("-") || person.getSnils().trim().equals("ошибка")) return;
         SnilsSaveResponse snilsPerson = new SnilsSaveResponse(person);
         snilsPerson.setDateInsert(new Date());
         System.out.println("ssaving:" + snilsPerson);
@@ -65,5 +69,7 @@ public class SnilsDAO {
             }
         }
         em.getTransaction().commit();
+
+        em.close();
     }
 }

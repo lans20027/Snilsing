@@ -85,7 +85,7 @@ public class IsFileExistThread extends Thread{
                 if (oiFile.isFile() && oiFile.canRead()) {
                     String fileEnp = checkEnpsInsideFile(oiFile,enps,enpsGood);
                     if(!fileEnp.equals("")){
-                        System.out.println("DELETING:" + file.toString());
+//                        System.out.println("DELETING:" + file.toString());
                         if(!saveResponse) Files.delete(file);
                     }
                 }
@@ -104,8 +104,8 @@ public class IsFileExistThread extends Thread{
                 if (oiFile1.isFile() && oiFile1.canRead()) {
                     String fileEnp = checkEnpsInsideFile(oiFile1,enps,enpsGood);
                     if(!fileEnp.equals("")){
-                        System.out.println("DELETING:" + file.toString());
-//                        if(!saveResponse) Files.delete(file);
+//                        System.out.println("DELETING:" + file.toString());
+                        if(!saveResponse) Files.delete(file);
                     }
                 }
             }
@@ -201,7 +201,7 @@ public class IsFileExistThread extends Thread{
 
             //запускаем задачу , которая ищет ответы со снилсами, либо ошибки
             executorService.scheduleWithFixedDelay(fileTask,delay,period,TimeUnit.MILLISECONDS);
-            System.out.println("sleeep");
+//            System.out.println("sleeep");
             Thread.sleep(timeWait * 1000);
             System.out.println("interrupting");
             executorService.shutdownNow();
