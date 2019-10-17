@@ -2,10 +2,7 @@ package org.tfoms.snils.fxcontrollers;
 
 import javafx.application.Platform;
 import javafx.collections.ObservableList;
-import javafx.scene.control.Label;
-import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TableView;
-import javafx.scene.control.Tooltip;
 import org.tfoms.snils.dao.SnilsDAO;
 import org.tfoms.snils.model.TablePerson;
 import org.tfoms.snils.model.ui.Settings;
@@ -104,7 +101,6 @@ public class IsFileExistThread extends Thread{
                 if (oiFile1.isFile() && oiFile1.canRead()) {
                     String fileEnp = checkEnpsInsideFile(oiFile1,enps,enpsGood);
                     if(!fileEnp.equals("")){
-//                        System.out.println("DELETING:" + file.toString());
                         if(!saveResponse) Files.delete(file);
                     }
                 }
@@ -143,7 +139,6 @@ public class IsFileExistThread extends Thread{
                     }
                 }
                 updateTableRow(enp,snils);
-                System.out.println("found enp-" + enp);
                 return enp;
             }
         }
@@ -156,7 +151,6 @@ public class IsFileExistThread extends Thread{
             for(TablePerson p : data){
                 if(p.getEnp().equals(enp)){
                     p.setSnils(snils);
-                    System.out.println("enp:" + enp + " snils:" + snils);
                     SnilsDAO.insertPerson(p);
                     break;
                 }
@@ -201,11 +195,10 @@ public class IsFileExistThread extends Thread{
 
             //запускаем задачу , которая ищет ответы со снилсами, либо ошибки
             executorService.scheduleWithFixedDelay(fileTask,delay,period,TimeUnit.MILLISECONDS);
-//            System.out.println("sleeep");
             Thread.sleep(timeWait * 1000);
-            System.out.println("interrupting");
             executorService.shutdownNow();
             executorService.awaitTermination(10,TimeUnit.SECONDS);
+
             throw new InterruptedException("timeout");
         } catch (InterruptedException e){
             Platform.runLater(() -> statusBar.update("Получено ответов:" + enpsGood.size()+ "/" + all,"ожидание остановлено",0));

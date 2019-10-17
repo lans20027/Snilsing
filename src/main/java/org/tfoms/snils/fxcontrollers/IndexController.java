@@ -22,10 +22,7 @@ import org.tfoms.snils.dao.SnilsDAO;
 import org.tfoms.snils.model.TablePerson;
 import org.tfoms.snils.model.ui.StatusBar;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
 public class IndexController {
@@ -105,7 +102,6 @@ public class IndexController {
         statusLabel.setContextMenu(contextMenu1);
 
         statusBar = new StatusBar(progressBar,statusLabel);
-        System.out.println("init good");
     }
 
     @FXML
@@ -164,6 +160,7 @@ public class IndexController {
             }catch (Exception ex){
                 Platform.runLater(() -> {
                     statusBar.update("Ошибка при поиске снилсов", ex.getMessage(),0);
+                    showErrorDialog(ex);
                     menuExport.setDisable(false);
                 });
             }
@@ -176,11 +173,14 @@ public class IndexController {
 
     @FXML
     public void importExcel(){
-        statusBar.reset();
+        statusBar.reset();//обновляем статус бар
+
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Импорт данных");
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Excel files","*.xlsx"));
-        if(lastImported != null){
+
+
+        if(lastImported != null){//последний открываемый файл
             fileChooser.setInitialDirectory(lastImported.getParentFile());
             fileChooser.setInitialFileName(lastImported.getName());
         }
@@ -256,9 +256,14 @@ public class IndexController {
 
             }catch (Exception ex){
                 Platform.runLater(() -> {
-                    statusBar.update("Ошибка при импорте",ex.getMessage(),0);
+                    statusBar.update("Ошибка при импорте",ex.getLocalizedMessage(),0);
+                    showErrorDialog(ex);
                     menuExport.setDisable(false);
                 });
+
+
+
+
             }
         });
         thread.start();
@@ -320,6 +325,7 @@ public class IndexController {
             }catch (Exception ex){
                 Platform.runLater(() -> {
                     statusBar.update("Ошибка при экспорте",ex.getMessage(),0);
+                    showErrorDialog(ex);
                     menuImport.setDisable(false);
                 });
             }
@@ -378,14 +384,26 @@ public class IndexController {
 
     private void showErrorDialog(String errorMsg){
         Alert alert = new Alert(Alert.AlertType.ERROR);
-        alert.setTitle("Ошибка");
         alert.setContentText(errorMsg);
         alert.showAndWait();
     }
 
     private void showErrorDialog(Exception errorMsg){
         Alert alert = new Alert(Alert.AlertType.ERROR);
-        alert.setContentText(errorMsg.toString());
+        StringBuilder description = new StringBuilder("Описание ошибки:\n");
+
+        description.append(errorMsg.toString());
+
+        String filePath = "";
+        try (PrintWriter printWriter = new PrintWriter("ExceptionDescription.txt")){
+            errorMsg.printStackTrace(printWriter);
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        description.append("\n\nДетальное описание ошибки лежит в файле Snilsing/app/ExceptionDescription.txt\n" );
+        alert.setContentText(description.toString());
         alert.showAndWait();
     }
 

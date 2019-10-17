@@ -9,13 +9,20 @@ import java.nio.file.Paths;
 import java.util.Properties;
 
 public class Settings {
+    /**
+     * Путь к файлу с настройками
+     * */
+    private final String pathSettings = "app-settings.properties";
+
+
+    /**
+     * Настройки по умолчанию
+     * */
     private final String defaultTimeWait = "1800";
     private final String defaultResponseFolder = "\\\\srv-term03\\542202_3s\\in\\snils\\";
     private final String defaultRequestFolder = "\\\\srv-term03\\542202_3s\\out\\";
     private final String defaultErrorFolder = "\\\\srv-term03\\542202_3s\\in\\error\\";
     private final boolean defaultSaveResponse = false;
-
-
 
     private String timeWait;
     private String responseFolder;
@@ -26,7 +33,6 @@ public class Settings {
 
     private final Properties properties = new Properties();
 
-
     public Settings(){
         loadSettings();
         System.out.println(this);
@@ -36,11 +42,8 @@ public class Settings {
     public void loadSettings(){
         try {
             properties.clear();
-            properties.load(getClass().getClassLoader().getResourceAsStream("props/setting.properties"));
-//            String path = Paths.get();
-//            FileInputStream fin = new FileInputStream("setting.properties");
-//
-//            properties.load(fin);
+            FileInputStream fin = new FileInputStream(pathSettings);
+            properties.load(fin);
             version = properties.getProperty("version");
             timeWait = properties.getProperty("waitTime");
             responseFolder = properties.getProperty("responseFolder");
@@ -51,7 +54,6 @@ public class Settings {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText(e.toString() + "\n\n" +e.getMessage());
             alert.showAndWait();
-            System.out.println("Не найдено");
         }
     }
 
@@ -76,18 +78,14 @@ public class Settings {
             properties.setProperty("saveResponse",Boolean.toString(saveResponse));
             String path = getClass().getClassLoader().getResource("props/setting.properties").getPath();
 
-            System.out.println("saving:" + this + "\n into " );
-            FileWriter writer = new FileWriter(path);
+            FileWriter writer = new FileWriter(pathSettings);
             this.properties.store(writer,"user save");
             writer.close();
-            System.out.println("save ok");
             return true;
         } catch (IOException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText(e.toString() + "\n\n" +e.getMessage());
             alert.showAndWait();
-
-            System.out.println(e.getMessage());
             return false;
         }
     }

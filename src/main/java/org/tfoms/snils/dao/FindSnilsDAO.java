@@ -13,6 +13,7 @@ import java.util.List;
 public class FindSnilsDAO {
     public static List<TablePerson> findPersonByEnp1(List<String> enps){
         try(Session session = HibernateUtil.getSessionFactory().openSession()){
+
             List<Person> personList = session.createQuery("from Person p where p.enp in :enps",Person.class).setParameter("enps",enps).list();
 
             ArrayList<TablePerson> tablePeople = new ArrayList<>(personList.size());

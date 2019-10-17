@@ -295,16 +295,8 @@ public class XmlParser {
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
             DOMSource domSource = new DOMSource(document);
-//            StreamResult streamResult1 = new StreamResult(new File("documents/" + person.getEnp() + ".xml"));
             StreamResult streamResult = new StreamResult(new File( directoryRequest + person.getEnp() + ".xml"));
-            //"\\\\Srv-term03\\542202_3s\\out\\"
-            // If you use
-            // StreamResult result = new StreamResult(System.out);
-            // the output will be pushed to the standard output ...
-            // You can use that for debugging
-
             transformer.transform(domSource, streamResult);
-//            transformer.transform(domSource, streamResult1);
             System.out.println(person.getEnp() + " - create good!");
             return true;
     }
@@ -398,9 +390,6 @@ public class XmlParser {
                 district = district.substring(0, district.length() - 4) + "НЫЙ";
             }
 
-            System.out.println("town:" + town);
-            System.out.println("district:" + district);
-            System.out.println("region:" + region);
 
             Element birthPlace = document.createElement("tns:BirthPlace");
             Element placeType = document.createElement("pfr:PlaceType");
@@ -422,12 +411,6 @@ public class XmlParser {
                 reg.appendChild(document.createTextNode(region));
                 birthPlace.appendChild(reg);
             }
-            /*
-            Element country = document.createElement("pfr:Country");
-            country.appendChild(document.createTextNode("РОССИЙСКАЯ ФЕДЕРАЦИЯ"));
-            birthPlace.appendChild(country);
-            */
-
             return birthPlace;
     }
 }
